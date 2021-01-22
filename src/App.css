@@ -64,13 +64,26 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   background-color: hsl(186, 100%, 94%);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--clr-primary-9),
+    var(--clr-primary-4)
+  );
+  background-repeat: no-repeat;
 }
+
 ul {
   list-style-type: none;
 }
 a {
+  color: var(--clr-grey-1);
   text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -105,6 +118,7 @@ p {
   }
   h3 {
     font-size: 1.75rem;
+    font-weight: 400;
   }
   h4 {
     font-size: 1rem;
@@ -120,6 +134,28 @@ p {
   }
 }
 /*  global classes */
+
+/* header */
+
+.header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.navbar {
+  display: flex;
+  font-size: 1.75rem;
+  width: 33%;
+  justify-content: space-between;
+  margin-right: 3%;
+  /* border: 1px solid red; */
+}
+
+#name {
+  margin-left: 3%;
+}
 
 /* section */
 .section {
@@ -159,7 +195,7 @@ Jobs
 
 .jobs-center {
   width: 80vw;
-  margin: 0 auto;
+  margin: 5rem auto;
   max-width: var(--max-width);
 }
 .btn-container {

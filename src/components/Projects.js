@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <section className="section">
       <div className="title">
-        <h2>Experience</h2>
+        <h2>Projects</h2>
         <div className="underline"></div>
       </div>
       <div className="jobs-center">
