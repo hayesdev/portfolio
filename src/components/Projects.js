@@ -47,11 +47,9 @@ const Projects = () => {
             );
           })}
         </div>
-
         <article className="job-info">
           <h3>{title}</h3>
           <h4>{name}</h4>
-
           {duties.map((duty, index) => {
             return (
               <div key={index} className="job-desc">
