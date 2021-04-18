@@ -8,7 +8,11 @@ function Footer() {
    <h1><a href="#">TWITTER</a></h1> 
 <h1><a href="#">INSTAGRAM</a></h1>
 </Social>
-<FinePrint></FinePrint>
+<FinePrint>
+    <p><a href="#">Newsletter</a></p>
+    <p><a href="#">Imprint</a></p>
+    <p><a href="#">Data Protection</a></p>
+</FinePrint>
     </FooterContainer>
 }
 
@@ -41,5 +45,13 @@ const FinePrint = styled.div`
     display: flex;
     width: 50%;
     height: 100%;
+    font-size:prem;
+    font-weight: 100;
+    > p {
+        margin-right: 1.5rem;
+    }
+    > p > a {
+        text-decoration: none;
+    }
 
 `;
