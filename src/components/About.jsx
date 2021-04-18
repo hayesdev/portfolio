@@ -5,7 +5,7 @@ function About() {
     return <AboutContainer>
 
             <AboutSection>About</AboutSection>
-            <AboutSidebar>I Build Content </AboutSidebar>    
+            <AboutSidebar><div>Build Visually Stunning Content</div> </AboutSidebar>    
 
     </AboutContainer>
 }
@@ -14,6 +14,7 @@ export default About
 
 const AboutContainer = styled.div`
 display: flex;
+
 width: 100vw;
 height: 30em;
 
@@ -21,15 +22,21 @@ height: 30em;
 
 const AboutSection = styled.div`
 display: flex;
-width: 75%;
+width: 66%;
 height: 100%;
 `;
 
 const AboutSidebar = styled.div`
 display: flex; 
-width: 25%;
+flex-direction: column;
+justify-content: center;
+align-items: space-around;
+width: 33%;
 height: 100%;
-background-color: rgb(84 6 123 / 0%);
-/* color: white; */
+background: #7a248b;
+/* background:#46467b; */
+color: white;
 border: 1px solid red;
+font-size: 2.5em;
+font-weight: 800;
 `;
