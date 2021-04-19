@@ -23,7 +23,7 @@ display: flex;
 width: 100vw;
 height: 10em;
 background: #e2e606;
-color: #46467b;
+color:#372441;
 `;
 
 const Social = styled.div`
@@ -38,17 +38,22 @@ const Social = styled.div`
     > h1 > a {
         text-decoration: none;
     }
+    a:visited {
+        color: #372441;
+    }
     
 `;
 
 const FinePrint = styled.div`
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 50%;
     height: 100%;
-    font-size:prem;
+    font-size:1rem;
     font-weight: 100;
     > p {
-        margin-right: 1.5rem;
+        margin-right: 2rem;
     }
     > p > a {
         text-decoration: none;

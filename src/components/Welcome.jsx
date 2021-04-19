@@ -7,7 +7,7 @@ function Welcome() {
         <WelcomeWrapper>
                 <TitleWrapper>
                     <TitleTransform>
-                        HAYESDEV
+                        <p>HAYESDEV</p>
                         </TitleTransform>
                         <Title>
                              Digital Sherpa
@@ -22,7 +22,6 @@ export default Welcome
 
 const WelcomeWrapper = styled.div`
   display: flex;
-  
   background: url(${image});
   background-size: cover;
   width: 100vw;
@@ -42,10 +41,15 @@ const TitleWrapper = styled.div`
 `;
 
 const TitleTransform = styled.div`
-width: 10%;
-height: 10%;
+display: flex;
+justify-content: center;
+width: 15%;
+height: 15%;
 transform:rotate(-90deg);
 border: 1px solid red;
+> p {
+font-weight: 400;
+}
 `;
 
 const Title = styled.div`
