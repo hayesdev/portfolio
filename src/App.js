@@ -1,7 +1,8 @@
 import React from "react";
 import Welcome from "./components/Welcome";
 import About from "./components/About";
-import Parallax from "./components/Parallax";
+import ParallaxOne from "./components/ParallaxOne";
+import ParallaxTwo from "./components/ParallaxTwo";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
@@ -12,9 +13,9 @@ function App() {
     <div>
       <Welcome />
       <About />
-      <Parallax />
+      <ParallaxOne />
       <Projects />
-      <Parallax />
+      <ParallaxTwo />
       <Footer />
     </div>
   );

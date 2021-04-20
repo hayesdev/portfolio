@@ -13,7 +13,9 @@ function About() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quia.</p>
             </AboutSection>
             <Sidebar>
-                <div>Build Visually Stunning Content</div> 
+                <div>I Build Visually</div> 
+                <div>stunning</div>
+                <div>content</div>
             </Sidebar>    
     </AboutContainer>
 }
@@ -45,7 +47,7 @@ font-size: 1em;
 const VideoContainer = styled.div`
 width: 100%;
 height: 50%;
-border: 1px solid red;
+
 `;
 
 const Title = styled.div`
@@ -66,7 +68,7 @@ const Sidebar = styled.div`
 display: flex; 
 flex-direction: column;
 justify-content: center;
-align-items: space-around;
+align-items: center;
 width: 33.33%;
 height: 100%;
 background: #7a248b;
@@ -74,4 +76,6 @@ background: #7a248b;
 color: white;
 font-size: 2.5em;
 font-weight: 800;
+line-height: 1em;
+
 `;

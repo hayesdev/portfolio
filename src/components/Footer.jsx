@@ -8,6 +8,7 @@ function Footer() {
    <h1><a href="#">TWITTER</a></h1> 
 <h1><a href="#">INSTAGRAM</a></h1>
 </Social>
+
 <FinePrint>
     <p><a href="#">Newsletter</a></p>
     <p><a href="#">Imprint</a></p>
@@ -42,7 +43,7 @@ const Social = styled.div`
     a:visited {
         color: #372441;
     }
-    
+    border: 1px solid red;
 `;
 
 const FinePrint = styled.div`

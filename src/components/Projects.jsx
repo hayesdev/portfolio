@@ -13,7 +13,8 @@ function Projects() {
                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed?</p>
                </ProjectSection>
            <Sidebar>
-               Get a quote now
+               <div>get a quote</div>
+               <div>now</div>
            </Sidebar>
        </ProjectsContainer>
     )
@@ -58,11 +59,12 @@ const Sidebar = styled.div`
 display: flex; 
 flex-direction: column;
 justify-content: center;
-align-items: space-around;
+align-items: center;
 width: 33.33%;
 height: 100%;
 background: #7a248b;
 color: white;
 font-size: 2.5em;
 font-weight: 800;
+line-height: 1em;
 `;
