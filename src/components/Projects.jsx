@@ -1,25 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function About() {
-    return <AboutContainer>
-
-            <AboutSection>About</AboutSection>
-            <Sidebar><div>Build Visually Stunning Content</div> </Sidebar>    
-
-    </AboutContainer>
+function Projects() {
+    return (
+       <ProjectsContainer>
+           <ProjectSection>
+               Projects
+               </ProjectSection>
+           <Sidebar>
+               Get a quote now
+           </Sidebar>
+       </ProjectsContainer>
+    )
 }
 
-export default About
+export default Projects
 
-const AboutContainer = styled.div`
+const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
-height: 30em;
-
+height: 28em;
 `;
 
-const AboutSection = styled.div`
+const ProjectSection = styled.div`
 display: flex;
 width: 66%;
 height: 100%;
@@ -33,7 +36,6 @@ align-items: space-around;
 width: 33%;
 height: 100%;
 background: #7a248b;
-/* background:#46467b; */
 color: white;
 font-size: 2.5em;
 font-weight: 800;
