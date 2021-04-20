@@ -14,6 +14,7 @@ function App() {
       <About />
       <Parallax />
       <Projects />
+      <Parallax />
       <Footer />
     </div>
   );

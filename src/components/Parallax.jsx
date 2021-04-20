@@ -7,7 +7,7 @@ function Parallax() {
     return (
         <ParallaxContainer>
           <SlideTitle>
- stuff goes here
+ Courtesy of  <a href="#">Unsplash</a>
           </SlideTitle>
         </ParallaxContainer>
     )
@@ -17,6 +17,7 @@ export default Parallax
 
 const ParallaxContainer = styled.div`
 display: flex;
+width: 100vw;
 align-items: center;
 background-image: url(${image});
 min-height: 500px;

@@ -32,6 +32,7 @@ const Social = styled.div`
     height: 100%;
     font-size: .75em;
     font-weight: 200;
+    margin-left: 1em;
     > h1 {
         margin-right: 1.5rem;
     }
