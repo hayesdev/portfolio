@@ -31,8 +31,9 @@ color: white;
 const SlideTitle = styled.div`
 display: flex;
 font-size: 3rem;
-font-family: 'PT Sans', sans-serif;
-font-weight: 800;
+font-family: 'Chivo', sans-serif;
+text-transform: none;
+font-weight: 400;
 justify-content: center;
 align-items: center;
 width: 100%;

@@ -7,9 +7,9 @@ const ParallaxTwo = () => {
     return (
              <ParallaxContainer>
                 <SlideTitle>
-                    <p>let's do 
+                    <p>Let's do 
                         <br/>
-                        <div>this sh*t.</div>
+                        <div>this Sh*t.</div>
                     </p>
                 </SlideTitle>
                 <ContactContainer>
@@ -49,7 +49,8 @@ justify-content: flex-start;
 align-items: center;
 padding-left: 4rem;
 font-size: 4rem;
-font-family: 'PT Sans', sans-serif;
+font-family: 'Chivo', sans-serif;
+text-transform: none;
 font-weight: 800;
 line-height: 1em;
 width: 66%;

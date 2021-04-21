@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project = () => {
+const Project = (title, pic, index) => {
     return (
         // this can map over projects array, for now will hardcode
         <div>
