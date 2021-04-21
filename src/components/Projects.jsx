@@ -11,11 +11,33 @@ function Projects() {
                    <h1>my latest work</h1>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident nobis ullam magni necessitatibus numquam a esse reprehenderit libero ipsum.</p>
                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed?</p>
+                    <Work>
+                {/* this will be mapped over later */}
+               <Project>
+                   Title
+               </Project>
+               <Project>
+                   Title
+               </Project>
+               <Project>
+                   Title
+               </Project>
+               <Project>
+                   Title
+               </Project>
+               <Project>
+                   Title
+               </Project>
+               <Project>
+                   Title
+               </Project>
+           </Work>
                </ProjectSection>
            <Sidebar>
                <div>get a quote</div>
                <div>now</div>
            </Sidebar>
+          
        </ProjectsContainer>
     )
 }
@@ -25,7 +47,7 @@ export default Projects
 const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
-height: 15em;
+height: 40em;
 `;
 
 const ProjectSection = styled.div`
@@ -61,10 +83,30 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 33.33%;
-height: 100%;
-background: #7a248b;
+height: 5em;
+background: #53195f;
 color: white;
 font-size: 2.5em;
 font-weight: 800;
 line-height: 1em;
+overflow: hidden;
+z-index: -1;
+`;
+
+const Work = styled.div`
+display: flex;
+flex-wrap: wrap;
+margin-top: 1rem;
+width: 100vw;
+height: 95%;
+/* border: 1px solid red; */
+`;
+
+const Project = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 33.3%;
+height: 50%;
+/* border: 1px solid red; */
 `;

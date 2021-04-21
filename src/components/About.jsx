@@ -13,9 +13,15 @@ function About() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quia.</p>
             </AboutSection>
             <Sidebar>
-                <div>I Build Visually</div> 
-                <div>stunning</div>
-                <div>content</div>
+                <div>Visually stunning</div> 
+                <div>content built</div>
+                <div>with:</div>
+                <Skills>
+                <p>html css less javascript</p>
+                <p>react react-router redux</p>
+                <p>next. js tailwind.css sass</p>
+                <p>jQuery bootstrap flexbox</p>
+                </Skills>
             </Sidebar>    
     </AboutContainer>
 }
@@ -26,7 +32,6 @@ const AboutContainer = styled.div`
 display: flex;
 width: 100vw;
 height: 30em;
-
 `;
 
 const AboutSection = styled.div`
@@ -71,11 +76,26 @@ justify-content: center;
 align-items: center;
 width: 33.33%;
 height: 100%;
-background: #7a248b;
+background: #53195f;
 /* background:#46467b; */
 color: white;
 font-size: 2.5em;
 font-weight: 800;
 line-height: 1em;
+`;
+
+const Skills = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 1.2rem;
+font-weight: 200;
+font-family: 'PT Sans', sans-serif;
+margin-top: 2em;
+width: 100%;
+height: 40%;
+> p {
+    line-height: .25em;
+}
 
 `;

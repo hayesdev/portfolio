@@ -3,11 +3,15 @@ import styled from 'styled-components'
 
 function Footer() {
     return <FooterContainer>
-<Social>
+        <SocialContainer>
+            <Social>
     <h1><a href="#">FACEBOOK</a></h1>
    <h1><a href="#">TWITTER</a></h1> 
 <h1><a href="#">INSTAGRAM</a></h1>
 </Social>
+<Copyright>© 2021 HayesDev</Copyright>
+        </SocialContainer>
+
 
 <FinePrint>
     <p><a href="#">Newsletter</a></p>
@@ -26,11 +30,17 @@ height: 10em;
 background: #e2e606;
 color:#372441;
 `;
+const SocialContainer = styled.div`
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+`;
 
 const Social = styled.div`
     display: flex;
     width: 50%;
-    height: 100%;
+    height: 75%;
     font-size: .75em;
     font-weight: 200;
     margin-left: 1em;
@@ -43,7 +53,14 @@ const Social = styled.div`
     a:visited {
         color: #372441;
     }
-    border: 1px solid red;
+`;
+
+const Copyright = styled.div`
+align-items: flex-end;
+margin-left: 1em;
+margin-top: 1em;
+width: 50%;
+height: 25%;
 `;
 
 const FinePrint = styled.div`

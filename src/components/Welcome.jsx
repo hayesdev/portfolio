@@ -25,7 +25,7 @@ const WelcomeWrapper = styled.div`
   background: url(${image});
   background-size: cover;
   width: 100vw;
-  height: 50em;
+  min-height: 50em;
   z-index:2;
 `;
 
