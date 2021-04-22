@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from "../shooting_star_mountains.jpg";
+// import image from "../shooting_star_mountains.jpg";
+import image from "../mountain_horizon.jpg";
 
 
 function ParallaxOne() {
     return (
         <ParallaxContainer>
           <SlideTitle>
- <p>Courtesy of  <a href="#"> Unsplash</a></p>
+ <p> Photos courtesy of  <a href="http://www.unsplash.com"> Unsplash</a></p>
           </SlideTitle>
         </ParallaxContainer>
     )
@@ -30,13 +31,19 @@ color: white;
 
 const SlideTitle = styled.div`
 display: flex;
-font-size: 3rem;
+font-size: 1.5rem;
 font-family: 'Chivo', sans-serif;
 text-transform: none;
-font-weight: 400;
+font-weight: 700;
 justify-content: center;
 align-items: center;
 width: 100%;
 height: 10rem;
+> p > a {
+  text-decoration: none;
+}
+a:hover {
+  color: #46467b;
+}
 /* border: 1px solid red; */
 `;

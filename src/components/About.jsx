@@ -1,11 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import ReactPlayer from 'react-player'
+import "../App.css";
 
 function About() {
-    return <AboutContainer>
+    return <AboutContainer id='about'>
             <AboutSection>
                 <VideoContainer>
-                    Video goes here
+                        <ReactPlayer  
+                        playing= {true}
+                        muted= {true}
+                        loop={true}                   
+                         config={{
+                             youtube: {
+                                playerVars: {
+                                    loop: 1,
+                                    controls: 0,
+                                    rel: 0,
+                                   
+                                }
+                             }
+                   }}
+                 url='https://www.youtube.com/watch?v=rmRV6o3Tx_4&ab_channel=MotionstockMotionstock'/>                                        
                 </VideoContainer>
                 <Title>About</Title>
                 <h1>solutions tailored for you</h1>
@@ -20,7 +36,7 @@ function About() {
                 <p>html css less javascript</p>
                 <p>react react-router redux</p>
                 <p>next. js tailwind.css sass</p>
-                <p>jQuery bootstrap flexbox</p>
+                <p>styled-components flexbox</p>
                 </Skills>
             </Sidebar>    
     </AboutContainer>
@@ -50,10 +66,21 @@ font-size: 1em;
 `;
 
 const VideoContainer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
 width: 100%;
 height: 50%;
+overflow: hidden;
 
 `;
+// const VideoCover = styled.div`
+// visibility: hidden;
+// width: 100%;
+// height: 100%;
+// z-index: 2;
+// `;
 
 const Title = styled.div`
 display: flex;

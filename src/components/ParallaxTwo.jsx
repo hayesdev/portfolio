@@ -5,7 +5,7 @@ import image from "../working_together.jpg";
 
 const ParallaxTwo = () => {
     return (
-             <ParallaxContainer>
+             <ParallaxContainer id='contact'>
                 <SlideTitle>
                     <p>Let's do 
                         <br/>
@@ -20,7 +20,7 @@ const ParallaxTwo = () => {
                     <br/>
                     <p>m - f: 09:00 - 18:00 est</p>
                     <p>sat + sun: by appointment only</p>
-                    <h2>407 427 6847</h2>
+                    <h2>+1 407 427 6847</h2>
                     <h2>gthelight@gmail.com</h2>
                     </ContactInfo>
                 </ContactContainer>

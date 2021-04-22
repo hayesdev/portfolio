@@ -1,25 +1,70 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
+import { Link as Scroll } from "react-scroll";
 import image from "../shooting_star_mountains.jpg";
+import {data, titles}  from './data'
+
 
 function Welcome() {
+    const [names, setNames] = useState(titles)
+    const [index, setIndex] = useState(0);
+   
+    useEffect(() => {
+        const lastIndex = names.length - 1;
+        if (index < 0) {
+          setIndex(lastIndex);
+        }
+        if (index > lastIndex) {
+          setIndex(0);
+        }
+      }, [index, names]);
+    
+      useEffect(() => {
+        /// storing interval value to pass thru cleanup function
+        let slider = setInterval(() => {
+          setIndex(index + 1);
+        }, 3000);
+        // clearInterval is a cleanup function that resets interval to new value
+        return () => clearInterval(slider);
+      }, [index]);
+
     return (
-        <WelcomeWrapper>
+        <WelcomeWrapper id='welcome'>
                 <TitleWrapper>
                     {/* <TitleTransform>
                         <p>development</p>
                         </TitleTransform> */}
                         <Title>
                             <h1>Gregory Hayes</h1>
-                            {/* developer designer digital sherpa */}
-                            <h1 style={{color: '#e2e606'}}> Digital Sherpa</h1>
+                            <div className="section-center">
+        {names.map((name, titleIndex) => {
+          const { title} = name;
+          let position = "nextSlide";
+          if (titleIndex === index) {
+            position = "activeSlide";
+          }
+          if (
+            titleIndex === index - 1 ||
+            (index === 0 && titleIndex === names.length - 1)
+          ) {
+            position = "lastSlide";
+          }
+          return (
+            <article key={titleIndex} className={position}>
+                <h1 style={{color: '#e2e606'}}>{title}</h1>
+            </article>
+          );
+        })}
+        </div>
+                            
+                          
                         </Title>
                         <NavWrapper>
                             <Nav>
-                            <h1><a href="#">welcome</a></h1>
-                            <h1><a href="#">about</a></h1>
-                            <h1><a href="#">projects</a></h1>
-                            <h1><a href="#">contact</a></h1>
+                            <h1><Scroll to='welcome' smooth={true}>Welcome</Scroll></h1>
+                            <h1><Scroll to='about' smooth={true}>about</Scroll></h1>
+                            <h1><Scroll to='projects' smooth={true}>projects</Scroll></h1>
+                            <h1><Scroll to='contact' smooth={true}>contact</Scroll></h1>
                             </Nav>  
                         </NavWrapper>  
                 </TitleWrapper>
@@ -80,9 +125,9 @@ height: 65%;
 
 const NavWrapper = styled.div`
 display: flex;
-width: 30%;
+width: 25%;
 height: 28rem;
-/* border: 1px solid red; */
+
 `;
 
 const Nav = styled.div`
@@ -91,18 +136,24 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 2rem;
-margin-right: 1rem;
+margin-left: 1.5rem;
 width: 100%;
-height: 28rem;
+height: 25rem;
 background: #e2e606;
 color: #372441;
 > h1 {
     margin: 0 2.5rem;
 }
 > h1 > a {
+        cursor: pointer;
         text-decoration: none;
     }
+   
     a:visited {
         color: #372441;
     }
+
+    a:hover {
+  color: #46467b;
+}
 `;

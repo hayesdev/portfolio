@@ -2,12 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Footer() {
-    return <FooterContainer>
+    return <FooterContainer >
         <SocialContainer>
             <Social>
     <h1><a href="#">FACEBOOK</a></h1>
    <h1><a href="#">TWITTER</a></h1> 
 <h1><a href="#">INSTAGRAM</a></h1>
+{/* Github and LinkedIn */}
 </Social>
 <Copyright>© 2021 HayesDev</Copyright>
         </SocialContainer>
@@ -49,10 +50,14 @@ const Social = styled.div`
     }
     > h1 > a {
         text-decoration: none;
-    }
+   
+}
     a:visited {
         color: #372441;
     }
+    a:hover {
+  color: #46467b;
+}
 `;
 
 const Copyright = styled.div`

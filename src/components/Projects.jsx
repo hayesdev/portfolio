@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import ProjectCard from './Project'
+import {data} from './data'
+import sleak from '../sleak_screenshot.PNG'
+import salt from '../saltinator_screenshot.PNG'
+import event from '../event_planner_screenshot.PNG'
 
 function Projects() {
     return (
-       <ProjectsContainer>
+       <ProjectsContainer id='projects'>
            <ProjectSection>
                <Title>
                    Projects
@@ -14,23 +19,17 @@ function Projects() {
                     <Work>
                 {/* this will be mapped over later */}
                <Project>
-                   Title
+                  <img src={sleak} alt='sleak'/>
                </Project>
                <Project>
-                   Title
+                   <img src={salt} alt="saltinator"/>
                </Project>
                <Project>
-                   Title
+                  <img src={event} alt="event planner"/>
                </Project>
-               <Project>
-                   Title
-               </Project>
-               <Project>
-                   Title
-               </Project>
-               <Project>
-                   Title
-               </Project>
+            {/* {data.map((title, desc, link, pic)=> {
+              return  <ProjectCard title={title} desc={desc} link={link} pic={pic} />
+            })} */}
            </Work>
                </ProjectSection>
            <Sidebar>
@@ -95,8 +94,8 @@ z-index: -1;
 
 const Work = styled.div`
 display: flex;
-flex-wrap: wrap;
-margin-top: 1rem;
+/* flex-wrap: wrap; */
+margin-top: 2em;
 width: 100vw;
 height: 95%;
 /* border: 1px solid red; */
@@ -106,7 +105,12 @@ const Project = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-width: 33.3%;
+width: 30%;
 height: 50%;
+> img {
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+}
 /* border: 1px solid red; */
 `;
