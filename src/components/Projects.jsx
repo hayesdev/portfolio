@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ProjectCard from './Project'
-import {data} from './data'
-import sleak from '../sleak_screenshot.PNG'
-import salt from '../saltinator_screenshot.PNG'
-import event from '../event_planner_screenshot.PNG'
+import ProjectCard from './ProjectCard'
 
 function Projects() {
     return (
@@ -18,25 +14,28 @@ function Projects() {
                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed?</p>
                     <Work>
                 {/* this will be mapped over later */}
-               <Project>
-                  <img src={sleak} alt='sleak'/>
-               </Project>
-               <Project>
-                   <img src={salt} alt="saltinator"/>
-               </Project>
-               <Project>
-                  <img src={event} alt="event planner"/>
-               </Project>
-            {/* {data.map((title, desc, link, pic)=> {
-              return  <ProjectCard title={title} desc={desc} link={link} pic={pic} />
-            })} */}
+                <ProjectCard>
+                    {/* <h2>Sleak</h2>
+                    <img src={sleak} alt='sleak'/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quos.</p> */}
+                </ProjectCard>
+                <Project>
+                    {/* <h2>Event Planner</h2>
+                   <img src={event} alt="event planner"/>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quos.</p> */}
+                </Project>
+                <Project>
+                    {/* <h2>Saltinator</h2>
+                    <img src={salt} alt="saltinator"/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quos.</p> */}
+                </Project>
+                
            </Work>
                </ProjectSection>
            <Sidebar>
                <div>get a quote</div>
                <div>now</div>
            </Sidebar>
-          
        </ProjectsContainer>
     )
 }
@@ -46,7 +45,7 @@ export default Projects
 const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
-height: 40em;
+height: 45em;
 `;
 
 const ProjectSection = styled.div`
@@ -94,23 +93,32 @@ z-index: -1;
 
 const Work = styled.div`
 display: flex;
-/* flex-wrap: wrap; */
-margin-top: 2em;
-width: 100vw;
-height: 95%;
+justify-content: center;
+/* margin-top: .5em; */
+width: 98vw;
+height: 70%;
 /* border: 1px solid red; */
+
 `;
 
 const Project = styled.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 30%;
-height: 50%;
+margin-left: 1rem;
+width: 33.3%;
+height: 100%;
 > img {
-    width: 100%;
-    height: 100%;
-    margin: 1em;
+    width: 75%;
+    max-height: 75%;
+}
+> h2 {
+    margin: 0 .5rem;
+}
+
+> p {
+    text-align: center;
 }
 /* border: 1px solid red; */
 `;

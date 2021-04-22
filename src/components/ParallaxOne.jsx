@@ -6,7 +6,7 @@ import image from "../mountain_horizon.jpg";
 
 function ParallaxOne() {
     return (
-        <ParallaxContainer>
+        <ParallaxContainer className='parallax' style={{}}>
           <SlideTitle>
  <p> Photos courtesy of  <a href="http://www.unsplash.com"> Unsplash</a></p>
           </SlideTitle>

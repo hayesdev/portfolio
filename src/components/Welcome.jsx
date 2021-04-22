@@ -2,55 +2,49 @@ import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
 import image from "../shooting_star_mountains.jpg";
-import {data, titles}  from './data'
+import {titles}  from './data'
 
 
 function Welcome() {
     const [names, setNames] = useState(titles)
     const [index, setIndex] = useState(0);
    
-    useEffect(() => {
-        const lastIndex = names.length - 1;
-        if (index < 0) {
-          setIndex(lastIndex);
-        }
-        if (index > lastIndex) {
-          setIndex(0);
-        }
-      }, [index, names]);
-    
       useEffect(() => {
+        const lastIndex = names.length - 1;
+            if (index < 0) {
+                setIndex(lastIndex);
+            }
+            if (index > lastIndex) {
+                setIndex(0);
+            }
+
         let slider = setInterval(() => {
           setIndex(index + 1);
-        }, 3000);
+        }, 2900);
         return () => clearInterval(slider);
       }, [index]);
 
     return (
         <WelcomeWrapper id='welcome'>
                 <TitleWrapper>
-                    {/* <TitleTransform>
-                        <p>development</p>
-                        </TitleTransform> */}
                         <Title>
                             <h1>Gregory Hayes</h1>
                             <div className="section-center">
-        {names.map((name, titleIndex) => {
-          const { title} = name;
-          let position = "nextSlide";
-          if (titleIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            titleIndex === index - 1 ||
-            (index === 0 && titleIndex === names.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-          return (
-            <article key={titleIndex} className={position}>
-                <h1 style={{color: '#e2e606'}}>{title}</h1>
-            </article>
+                                {names.map((name, titleIndex) => {
+                                    const { title} = name;
+                                    let position = "nextSlide";
+                                    if (titleIndex === index) {
+                                        position = "activeSlide";
+                                    }
+                                    if (titleIndex === index - 1 ||
+                                        (index === 0 && titleIndex === names.length - 1)) 
+                                    {
+                                    position = "lastSlide";
+                                }
+                                    return (
+                                        <article key={titleIndex} className={position}>
+                                            <h1 style={{color: '#e2e606'}}>{title}</h1>
+                                        </article>
           );
         })}
         </div>                           
@@ -81,25 +75,12 @@ const WelcomeWrapper = styled.div`
 
 const TitleWrapper = styled.div`
     display: flex;
-    /* flex-direction: column; */
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     min-height: 24em;
     color: white;
    
-`;
-
-const TitleTransform = styled.div`
-display: flex;
-justify-content: center;
-width: 15%;
-height: 15%;
-transform:rotate(-90deg);
-border: 1px solid red;
-> p {
-font-weight: 400;
-}
 `;
 
 const Title = styled.div`
@@ -137,8 +118,8 @@ margin-top: 2rem;
 margin-left: 1.5rem;
 width: 100%;
 height: 25rem;
-background: #e2e606;
-color: #372441;
+/* background: #e2e606; */
+color: #e2e606;
 > h1 {
     margin: 0 2.5rem;
 }
