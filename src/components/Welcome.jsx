@@ -20,11 +20,9 @@ function Welcome() {
       }, [index, names]);
     
       useEffect(() => {
-        /// storing interval value to pass thru cleanup function
         let slider = setInterval(() => {
           setIndex(index + 1);
         }, 3000);
-        // clearInterval is a cleanup function that resets interval to new value
         return () => clearInterval(slider);
       }, [index]);
 
@@ -55,10 +53,8 @@ function Welcome() {
             </article>
           );
         })}
-        </div>
-                            
-                          
-                        </Title>
+        </div>                           
+                </Title>
                         <NavWrapper>
                             <Nav>
                             <h1><Scroll to='welcome' smooth={true}>Welcome</Scroll></h1>
@@ -91,7 +87,7 @@ const TitleWrapper = styled.div`
     width: 100%;
     min-height: 24em;
     color: white;
-    /* border: 1px solid white; */
+   
 `;
 
 const TitleTransform = styled.div`
@@ -117,9 +113,11 @@ font-weight: 900;
 text-transform: none;
 width: 66.6%;
 height: 65%;
-/* border: 1px solid red; */
 > h1 {
     margin: 0;
+}
+> div > article > h1 {
+    margin:0 ;
 }
 `;
 

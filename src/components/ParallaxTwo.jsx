@@ -9,7 +9,7 @@ const ParallaxTwo = () => {
                 <SlideTitle>
                     <p>Let's do 
                         <br/>
-                        <div>this Sh*t.</div>
+                        <span>this Sh*t.</span>
                     </p>
                 </SlideTitle>
                 <ContactContainer>
@@ -55,7 +55,7 @@ font-weight: 800;
 line-height: 1em;
 width: 66%;
 height: 20rem;
-> p > div {
+> p > span {
     color: #e2e606;
 }
 `;

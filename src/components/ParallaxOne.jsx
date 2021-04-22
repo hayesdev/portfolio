@@ -21,7 +21,7 @@ display: flex;
 width: 100vw;
 align-items: center;
 background-image: url(${image});
-min-height: 600px;
+min-height: 500px;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;

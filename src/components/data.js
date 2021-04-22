@@ -22,7 +22,7 @@ export const data = [
 ];
 
 export const titles = [
-  { title: ".digitalSherpa()" },
   { title: ".developer()" },
   { title: ".designer()" },
+  { title: ".digitalSherpa()" },
 ];
