@@ -37,9 +37,10 @@ article {
 article.activeSlide {
   opacity: 1;
   transform: translateX(0);
-  animation-name: fadeOut;
-  animation-duration: 3s;
+  animation: fadeOut 2.5s;
+  /* animation-duration: 1.5s; */
 }
+
 article.lastSlide {
   transform: translateY(100%);
   display: none;
@@ -49,11 +50,20 @@ article.nextSlide {
   display: none;
 }
 
-@keyframes fadeOut {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
   }
 }

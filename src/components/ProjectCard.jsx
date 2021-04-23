@@ -8,37 +8,35 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import sleak from '../sleak_screenshot.PNG'
-import salt from '../saltinator_screenshot.PNG'
-import event from '../event_planner_screenshot.PNG'
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    width: '75%',
+    height: '75%'
   },
   media: {
-    height: 140,
+    height: 200,
   },
 });
 
-export default function ProjectCard() {
+export default function ProjectCard ({title, desc, link, image}){
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
+        component={image}
           className={classes.media}
-          image={sleak}
-          title="Contemplative Reptile"
+          image={image}
+          title={title}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+          <Typography gutterBottom variant="h5" component='h2'>
+            random text
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="body2" color="textSecondary" component='p'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores!
           </Typography>
         </CardContent>
       </CardActionArea>
