@@ -18,8 +18,8 @@ function Projects() {
                     <Work>
                 {data.map((project, index)=> {
                     const {title, desc, link, image} = project;
-                    return <Project key={index} title={title} desc={desc} link={link} image={image} >
-                        <ProjectCard/>
+                    return <Project key={index}  >
+                        <ProjectCard title={title} desc={desc} link={link} image={image}/>
                     </Project> 
                 })}
            </Work>
@@ -99,15 +99,14 @@ align-items: center;
 margin-left: 1rem;
 width: 33.3%;
 height: 100%;
-> img {
+/* > img {
     width: 75%;
     max-height: 75%;
-}
-> h2 {
+} */
+/* > h2 {
     margin: 0 .5rem;
-}
-> p {
-    text-align: center;
+} */
+* p {
     margin-left: 0;
 }
 /* border: 1px solid red; */

@@ -7,7 +7,7 @@ export const data = [
     title: "Sleak",
     desc: "A Slack clone with messaging",
     link: "https://sleak-1acdd.web.app/https://sleak-1acdd.web.app/",
-    image: { sleak },
+    image: sleak,
   },
   {
     title: "Event Planner",

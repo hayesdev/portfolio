@@ -21,28 +21,27 @@ const useStyles = makeStyles({
 
 export default function ProjectCard ({title, desc, link, image}){
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
-        component={image}
+        component='img'
           className={classes.media}
           image={image}
           title={title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component='h2'>
-            random text
+            {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component='p'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores!
+            {desc}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          View project
+          <a href={link}>View project</a>
         </Button>
       </CardActions>
     </Card>

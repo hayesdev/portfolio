@@ -20,7 +20,7 @@ function Welcome() {
 
         let slider = setInterval(() => {
           setIndex(index + 1);
-        }, 2900);
+        }, 2800);
         return () => clearInterval(slider);
       }, [index]);
 
