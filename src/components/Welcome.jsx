@@ -51,10 +51,10 @@ function Welcome() {
                 </Title>
                         <NavWrapper>
                             <Nav>
-                            <h1><Scroll to='welcome' smooth={true}>Welcome</Scroll></h1>
-                            <h1><Scroll to='about' smooth={true}>about</Scroll></h1>
-                            <h1><Scroll to='projects' smooth={true}>projects</Scroll></h1>
-                            <h1><Scroll to='contact' smooth={true}>contact</Scroll></h1>
+                            <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1>
+                            <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>about</Scroll></h1>
+                            <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
+                            <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1>
                             </Nav>  
                         </NavWrapper>  
                 </TitleWrapper>

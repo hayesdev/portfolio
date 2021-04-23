@@ -1,5 +1,6 @@
 import React from "react";
 import Welcome from "./components/Welcome";
+import Navbar from "./components/Navbar";
 import About from "./components/About";
 import ParallaxOne from "./components/ParallaxOne";
 import ParallaxTwo from "./components/ParallaxTwo";
@@ -11,6 +12,7 @@ import "./App.css";
 function App() {
   return (
     <div>
+      <Navbar />
       <Welcome />
       <About />
       <ParallaxOne />
