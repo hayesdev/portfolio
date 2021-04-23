@@ -44,7 +44,7 @@ export default function ProjectCard ({title, desc, link, image}){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <a style={{textDecoration: 'none'}} href={link}>View project</a>
+          <a style={{textDecoration: 'none'}} href={link} target='_blank'>View project</a>
         </Button>
       </CardActions>
     </Card>

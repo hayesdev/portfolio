@@ -5,9 +5,9 @@ function Footer() {
     return <FooterContainer >
         <SocialContainer>
             <Social>
-    <h1><a href="http://www.facebook.com">FACEBOOK</a></h1>
-   <h1><a href="http://www.twitter.com">TWITTER</a></h1> 
-<h1><a href="http://www.instagram.com">INSTAGRAM</a></h1>
+    <h1><a href="http://www.facebook.com" target='_blank'>FACEBOOK</a></h1>
+   <h1><a href="http://www.twitter.com" target='_blank'>TWITTER</a></h1> 
+<h1><a href="http://www.instagram.com" target='_blank'>INSTAGRAM</a></h1>
 {/* Github and LinkedIn */}
 </Social>
 <Copyright>© 2021 HayesDev</Copyright>

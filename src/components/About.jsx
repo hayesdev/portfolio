@@ -17,6 +17,7 @@ function About() {
                                     loop: 1,
                                     controls: 0,
                                     rel: 0,
+                                    end: 220,
                                    
                                 }
                              }
@@ -75,12 +76,6 @@ height: 50%;
 overflow: hidden;
 
 `;
-// const VideoCover = styled.div`
-// visibility: hidden;
-// width: 100%;
-// height: 100%;
-// z-index: 2;
-// `;
 
 const Title = styled.div`
 display: flex;
