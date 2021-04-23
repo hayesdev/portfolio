@@ -11,12 +11,15 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    width: '75%',
-    height: '75%'
+    maxWidth: 320,
   },
   media: {
-    height: 200,
+    height: 250,
   },
+  fonts: {
+    fontFamily: 'PT Sans',
+    fontWeight: 900,
+  }
 });
 
 export default function ProjectCard ({title, desc, link, image}){
@@ -41,7 +44,7 @@ export default function ProjectCard ({title, desc, link, image}){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <a href={link}>View project</a>
+          <a style={{textDecoration: 'none'}} href={link}>View project</a>
         </Button>
       </CardActions>
     </Card>
