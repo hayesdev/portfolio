@@ -36,7 +36,7 @@ const MainHeader = styled.div`
   height: 5rem;
   width: 100vw;
   > h1 {
-    
+    font-size: 2.5em;
     margin: 0 2rem;
 }
 > h1 > a {
