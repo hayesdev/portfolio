@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
 
-import MenuIcon from "@material-ui/icons/Menu";
-
 const Navbar = () => {
     return (
         <MainHeader>

@@ -30,7 +30,6 @@ const ParallaxTwo = () => {
                 </RowWrapper>
                 <UpArrowWrapper>
                 <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}><FaAngleUp/></Scroll>
-                    {/* <p>top</p>     */}
                 </UpArrowWrapper>
         </ParallaxContainer>
     )
@@ -107,7 +106,6 @@ align-items: center;
 width: 100%;
 height: 2em;
 font-size: 4em;
-/* margin-bottom: .75em; */
 color: white;
 > p {
     font-size: 1.5rem;

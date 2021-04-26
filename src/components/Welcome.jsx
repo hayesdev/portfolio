@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import image from "../assets/purple-mountain-1280.jpg";
-// import image from "../shooting_star_mountains.jpg";
 import {titles}  from './data'
 
 

@@ -99,13 +99,6 @@ align-items: center;
 margin-left: 1rem;
 width: 48%;
 height: 100%;
-/* > img {
-    width: 75%;
-    max-height: 75%;
-} */
-/* > h2 {
-    margin: 0 .5rem;
-} */
 * p {
     margin-left: 0;
 }
