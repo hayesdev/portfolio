@@ -52,25 +52,25 @@ const MainHeader = styled.div`
   /* border: 1px solid white; */
 `;
 
-const MenuIconContainer = styled.div`
-  margin-top: .5em;
-  margin-right: 1em;
-  > .MuiSvgIcon-root {
-    font-size: 2.5em;
-    color: white;
-    :hover {
-        cursor: pointer;
-        color: #46467b;
-    }
-  }
-`;
+// const MenuIconContainer = styled.div`
+//   margin-top: .5em;
+//   margin-right: 1em;
+//   > .MuiSvgIcon-root {
+//     font-size: 2.5em;
+//     color: white;
+//     :hover {
+//         cursor: pointer;
+//         color: #46467b;
+//     }
+//   }
+// `;
 
-const HeaderTitle = styled.div`
-  /* height: 40px;
-  width: 90px; */
-  transform: rotate(-90deg);
-  font-size: 1.5em;
-  font-weight: 600;
-  margin-top: 2.5em;
-  /* border: 1px solid white; */
-`;
+// const HeaderTitle = styled.div`
+//   /* height: 40px;
+//   width: 90px; */
+//   transform: rotate(-90deg);
+//   font-size: 1.5em;
+//   font-weight: 600;
+//   margin-top: 2.5em;
+//   /* border: 1px solid white; */
+// `;
