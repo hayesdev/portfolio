@@ -1,18 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
+import {FaAngleDown} from 'react-icons/fa'
+
 import MenuIcon from "@material-ui/icons/Menu";
 
 const Navbar = () => {
     return (
         <MainHeader>
-        <MenuIconContainer>
-          {/* <MenuIcon onClick={()=> {console.log('clicked')}}/> */} 
-        </MenuIconContainer>
+
         {/* <HeaderTitle>HayesDev</HeaderTitle> */}
           {/* <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1> */}
          
-          <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>explore</Scroll></h1>
+          <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}><FaAngleDown/></Scroll></h1>
+        {/* <MenuIconContainer>
+          <MenuIcon onClick={()=> {console.log('clicked')}}/> 
+        </MenuIconContainer> */}
           {/* <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
           <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1> */}
       </MainHeader>
@@ -23,10 +26,10 @@ export default Navbar
 
 const MainHeader = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: absolute;
   z-index: 2;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   color: white;
 /* font-family: 'Chivo', sans-serif; */

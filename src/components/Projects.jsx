@@ -72,7 +72,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 33.33%;
-height: 5em;
+height: 6em;
 background: #53195f;
 color: white;
 font-size: 2.5em;
@@ -85,10 +85,10 @@ z-index: -1;
 const Work = styled.div`
 display: flex;
 justify-content: center;
-/* margin-top: .5em; */
+margin-top: 1em;
 width: 98vw;
 height: 70%;
-/* border: 1px solid red; */
+
 `;
 
 const Project = styled.div`
