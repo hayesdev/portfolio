@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import image from "../shooting_star_mountains.jpg";
-// import image from "../mountain_horizon.jpg";
 import image from "../assets/purple-mountain-1280.jpg";
 
 
@@ -47,6 +45,9 @@ height: 10rem;
 }
 a:hover {
   color: #46467b;
+}
+@media (max-width: 600px) {
+  font-size: 1.5em;
 }
 /* border: 1px solid red; */
 `;

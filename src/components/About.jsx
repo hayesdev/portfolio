@@ -1,28 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import ReactPlayer from 'react-player'
+import image from '../assets/working_together-2.jpg'
 import "../App.css";
 
 function About() {
     return <AboutContainer id='about'>
             <AboutSection>
                 <VideoContainer>
-                        <ReactPlayer  
-                        playing= {true}
-                        muted= {true}
-                        loop={true}                   
-                         config={{
-                             youtube: {
-                                playerVars: {
-                                    loop: 1,
-                                    controls: 0,
-                                    rel: 0,
-                                    end: 220,
-                                   
-                                }
-                             }
-                   }}
-                 url='https://www.youtube.com/watch?v=rmRV6o3Tx_4&ab_channel=MotionstockMotionstock'/>                                        
+                    <img src={image} alt=''/>
                 </VideoContainer>
                 <Title>About</Title>
                 <h1>solutions tailored for you</h1>
@@ -49,6 +34,12 @@ const AboutContainer = styled.div`
 display: flex;
 width: 100vw;
 height: 30em;
+@media (max-width: 885px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45em;
+}   
 `;
 
 const AboutSection = styled.div`
@@ -60,9 +51,17 @@ font-size: 1em;
 > h1, p {
     margin: .5rem .75rem;
 }
-
 > p {
     text-transform: none;
+}
+@media (max-width: 885px) {
+    width: 98%;
+    height: 50%;
+}
+@media (max-width: 376px) {
+    > h1 {
+        font-size: 1em;
+    }
 }
 `;
 
@@ -74,7 +73,10 @@ margin-top: 1rem;
 width: 100%;
 height: 50%;
 overflow: hidden;
-
+> img {
+    width: 95%;
+    height: auto;
+}
 `;
 
 const Title = styled.div`
@@ -88,7 +90,6 @@ font-weight: 600;
 color: white;
 background: #46467b;
 border-radius: 10px;
-
 `;
 
 const Sidebar = styled.div`
@@ -99,11 +100,14 @@ align-items: center;
 width: 33.33%;
 height: 100%;
 background: #53195f;
-/* background:#46467b; */
 color: white;
 font-size: 2.5em;
 font-weight: 800;
 line-height: 1em;
+@media (max-width: 885px) {
+    width: 100%;
+    height: 50%;
+}
 `;
 
 const Skills = styled.div`
@@ -113,11 +117,10 @@ align-items: center;
 font-size: 1.2rem;
 font-weight: 200;
 font-family: 'PT Sans', sans-serif;
-margin-top: 2em;
+margin-top: 1.5em;
 width: 100%;
 height: 40%;
 > p {
     line-height: .25em;
 }
-
 `;

@@ -60,6 +60,9 @@ const Social = styled.div`
     a:hover {
   color: #46467b;
 }
+@media (max-width: 768px) {
+    font-size: .5em;
+}
 `;
 
 const Copyright = styled.div`
@@ -84,5 +87,8 @@ const FinePrint = styled.div`
     > p > a {
         text-decoration: none;
     }
+    @media (max-width: 768px) {
+    font-size: .5em;
+}
 
 `;

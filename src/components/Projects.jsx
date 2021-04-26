@@ -38,6 +38,9 @@ const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
 height: 50em;
+@media (max-width: 768px) {
+    height: 80em;
+}
 `;
 
 const ProjectSection = styled.div`
@@ -50,6 +53,9 @@ height: 100%;
 }
 > p {
     text-transform: none;
+}
+@media (max-width: 768px) {
+    width: 100%;
 }
 `;
 
@@ -78,8 +84,10 @@ color: white;
 font-size: 2.5em;
 font-weight: 800;
 line-height: 1em;
-overflow: hidden;
-z-index: -1;
+/* overflow: hidden; */
+@media (max-width: 768px) {
+    display: none;
+}
 `;
 
 const Work = styled.div`
@@ -87,7 +95,12 @@ display: flex;
 justify-content: center;
 margin-top: 1em;
 width: 98vw;
-height: 70%;
+height: 100%;
+@media (max-width: 768px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+} 
 
 `;
 
@@ -97,10 +110,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-left: 1rem;
-width: 48%;
+width: auto;
 height: 100%;
 * p {
     margin-left: 0;
 }
-/* border: 1px solid red; */
+@media (max-width: 768px) {
+    height: 50%;
+}
+border: 1px solid red;
 `;

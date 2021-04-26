@@ -50,14 +50,6 @@ function Welcome() {
         })}
         </div>                           
                 </Title>
-                        {/* <NavWrapper>
-                            <Nav>
-                            <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1>
-                            <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>about</Scroll></h1>
-                            <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
-                            <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1>
-                            </Nav>  
-                        </NavWrapper>   */}
                 </TitleWrapper>
         </WelcomeWrapper>
     )
@@ -71,10 +63,11 @@ const WelcomeWrapper = styled.div`
   background-size: cover;
   width: 100vw;
   min-height: 55em;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index:2;
+
 `;
 
 const TitleWrapper = styled.div`
@@ -84,7 +77,10 @@ const TitleWrapper = styled.div`
     width: 100%;
     min-height: 24em;
     color: white;
-   
+    @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+}   
 `;
 
 const Title = styled.div`
@@ -104,40 +100,23 @@ height: 65%;
 > div > article > h1 {
     font-size: 1.8em;
     margin:0 ;
+    @media (max-width: 767px) {
+        font-size: 1.25em;
+}
+    @media (max-width: 374px) {
+    font-size: 1em;
+}
+
+}
+@media (max-width: 767px) {
+        font-size: 1.75em;
+}
+@media (max-width: 595px) {
+    font-size: 1.5em;
+}
+@media (max-width: 416px) {
+    font-size: .75em;
 }
 `;
 
-// const NavWrapper = styled.div`
-// display: flex;
-// width: 25%;
-// height: 28rem;
 
-// `;
-
-// const Nav = styled.div`
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
-// margin-top: 2rem;
-// margin-left: 1.5rem;
-// width: 100%;
-// height: 25rem;
-// /* background: #e2e606; */
-// color: #e2e606;
-// > h1 {
-//     margin: 0 2.5rem;
-// }
-// > h1 > a {
-//         cursor: pointer;
-//         text-decoration: none;
-//     }
-   
-//     a:visited {
-//         color: #372441;
-//     }
-
-//     a:hover {
-//   color: #46467b;
-// }
-// `;

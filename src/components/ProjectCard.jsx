@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     maxWidth: 320,
   },
   media: {
-    height: 250,
+    height: 300,
   },
   fonts: {
     fontFamily: 'PT Sans',

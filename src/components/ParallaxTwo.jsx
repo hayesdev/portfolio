@@ -29,7 +29,9 @@ const ParallaxTwo = () => {
                 </ContactContainer>  
                 </RowWrapper>
                 <UpArrowWrapper>
-                <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}><FaAngleUp/></Scroll>
+                    <div>
+                        <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}><FaAngleUp/></Scroll>
+                    </div>
                 </UpArrowWrapper>
         </ParallaxContainer>
     )
@@ -55,6 +57,10 @@ color: white;
 const RowWrapper = styled.div`
     display: flex;
     width: 100%;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const SlideTitle = styled.div`
@@ -72,6 +78,10 @@ height: 20rem;
 > p > span {
     color: #e2e606;
 }
+@media (max-width: 900px) {
+    justify-content: center;
+    padding-left: 0;
+}
 `;
 
 const ContactContainer = styled.div`
@@ -81,6 +91,11 @@ margin-right: 5em;
 width: 30%;
 height: 28rem;
 background:#53195f;
+@media (max-width: 900px) {
+    width: 80%;
+    height: 25rem;
+    margin: 0;
+}
 `;
 
 const ContactInfo = styled.div`
@@ -101,19 +116,26 @@ margin-top: 2em;
 const UpArrowWrapper = styled.div`
 display: flex;
 flex-direction: column;
-justify-content:flex-end;
+justify-content:flex-start;
 align-items: center;
 width: 100%;
-height: 2em;
-font-size: 4em;
+height: 1em;
+font-size: 4.25em;
 color: white;
 > p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-:hover {
+> div {
+    width: 1em;
+}
+div:hover {
     cursor: pointer;
     color: #e2e606
 }
-;
-/* border: 1px solid red; */
+@media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+
 `;
