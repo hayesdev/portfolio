@@ -5,8 +5,10 @@ import {titles}  from './data'
 
 
 function Welcome() {
-    const [names, setNames] = useState(titles)
+    
     const [index, setIndex] = useState(0);
+    const names = titles;
+
    
       useEffect(() => {
         const lastIndex = names.length - 1;
@@ -21,7 +23,7 @@ function Welcome() {
           setIndex(index + 1);
         }, 2800);
         return () => clearInterval(slider);
-      }, [index]);
+      }, [index, names.length]);
 
     return (
         <WelcomeWrapper id='welcome'>
@@ -105,37 +107,37 @@ height: 65%;
 }
 `;
 
-const NavWrapper = styled.div`
-display: flex;
-width: 25%;
-height: 28rem;
+// const NavWrapper = styled.div`
+// display: flex;
+// width: 25%;
+// height: 28rem;
 
-`;
+// `;
 
-const Nav = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 2rem;
-margin-left: 1.5rem;
-width: 100%;
-height: 25rem;
-/* background: #e2e606; */
-color: #e2e606;
-> h1 {
-    margin: 0 2.5rem;
-}
-> h1 > a {
-        cursor: pointer;
-        text-decoration: none;
-    }
+// const Nav = styled.div`
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// align-items: center;
+// margin-top: 2rem;
+// margin-left: 1.5rem;
+// width: 100%;
+// height: 25rem;
+// /* background: #e2e606; */
+// color: #e2e606;
+// > h1 {
+//     margin: 0 2.5rem;
+// }
+// > h1 > a {
+//         cursor: pointer;
+//         text-decoration: none;
+//     }
    
-    a:visited {
-        color: #372441;
-    }
+//     a:visited {
+//         color: #372441;
+//     }
 
-    a:hover {
-  color: #46467b;
-}
-`;
+//     a:hover {
+//   color: #46467b;
+// }
+// `;
