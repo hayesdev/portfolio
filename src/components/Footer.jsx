@@ -15,9 +15,9 @@ function Footer() {
 
 
 <FinePrint>
-    <p><a href="#">Newsletter</a></p>
-    <p><a href="#">Imprint</a></p>
-    <p><a href="#">Data Protection</a></p>
+    <p><a href="http://www.facebook.com" target='_blank' rel="noreferrer noopener">Newsletter</a></p>
+    <p><a href="http://www.facebook.com" target='_blank' rel="noreferrer noopener">Imprint</a></p>
+    <p><a href="http://www.facebook.com" target='_blank' rel="noreferrer noopener">Data Protection</a></p>
 </FinePrint>
     </FooterContainer>
 }
