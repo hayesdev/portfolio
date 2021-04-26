@@ -14,7 +14,7 @@ function Projects() {
                    </Title>
                    <h1>my latest work</h1>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident nobis ullam magni necessitatibus numquam a esse reprehenderit libero ipsum.</p>
-                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed?</p>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed!</p>
                     <Work>
                 {data.map((project, index)=> {
                     const {title, desc, link, image} = project;
@@ -37,7 +37,7 @@ export default Projects
 const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
-height: 45em;
+height: 50em;
 `;
 
 const ProjectSection = styled.div`
@@ -97,7 +97,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-left: 1rem;
-width: 33.3%;
+width: 48%;
 height: 100%;
 /* > img {
     width: 75%;

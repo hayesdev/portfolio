@@ -6,7 +6,7 @@ import "../App.css";
 function About() {
     return <AboutContainer id='about'>
             <AboutSection>
-                {/* <VideoContainer>
+                <VideoContainer>
                         <ReactPlayer  
                         playing= {true}
                         muted= {true}
@@ -23,11 +23,11 @@ function About() {
                              }
                    }}
                  url='https://www.youtube.com/watch?v=rmRV6o3Tx_4&ab_channel=MotionstockMotionstock'/>                                        
-                </VideoContainer> */}
+                </VideoContainer>
                 <Title>About</Title>
                 <h1>solutions tailored for you</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsum assumenda quo incidunt expedita aliquid. Reiciendis esse ea enim? Expedita mollitia accusantium asperiores eligendi. Impedit!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quia.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab?</p>
             </AboutSection>
             <Sidebar>
                 <div>Visually stunning</div> 

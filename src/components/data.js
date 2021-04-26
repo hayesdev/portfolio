@@ -1,14 +1,15 @@
-import sleak from "../sleak_screenshot.PNG";
-import salt from "../saltinator_screenshot.PNG";
-import event from "../event_planner_screenshot.PNG";
+import sleak from "../assets/sleak_screenshot.PNG";
+import salt from "../assets/saltinator_screenshot.PNG";
+import event from "../assets/event_planner_screenshot.PNG";
+import yulu from "../assets/yulu_screenshot.PNG";
 
 export const data = [
   {
-    title: "Sleak",
+    title: "Yulu",
     desc:
-      "A Slack clone with messaging using React, Redux Toolkit, react-router, firebase, and styled-components.",
-    link: "https://sleak-1acdd.web.app/https://sleak-1acdd.web.app/",
-    image: sleak,
+      "This Hulu clone was made with Next.js, Tailwind.css, and Just-In-Time (JIT).",
+    link: "https://yulu.vercel.app/",
+    image: yulu,
   },
   {
     title: "Event Planner",
@@ -18,12 +19,13 @@ export const data = [
     image: event,
   },
   {
-    title: "Saltinator",
+    title: "Sleak",
     desc:
-      "Fullstack app using React, Redux, react-router, react-hook-forms, and Node.js with Express.",
-    link: "https://saltinator.netlify.app/",
-    image: salt,
+      "A Slack clone with messaging using React, Redux Toolkit, react-router, firebase, and styled-components.",
+    link: "https://sleak-1acdd.web.app/https://sleak-1acdd.web.app/",
+    image: sleak,
   },
+
   {
     title: "Saltinator",
     desc:

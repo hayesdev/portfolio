@@ -1,14 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as Scroll } from "react-scroll";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const Navbar = () => {
     return (
         <MainHeader>
         <MenuIconContainer>
-          <MenuIcon onClick={()=> {console.log('clicked')}}/>
+          {/* <MenuIcon onClick={()=> {console.log('clicked')}}/> */} 
         </MenuIconContainer>
-        <HeaderTitle>HayesDev</HeaderTitle>
+        {/* <HeaderTitle>HayesDev</HeaderTitle> */}
+          {/* <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1> */}
+         
+          <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>explore</Scroll></h1>
+          {/* <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
+          <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1> */}
       </MainHeader>
     )
 }
@@ -17,14 +23,31 @@ export default Navbar
 
 const MainHeader = styled.div`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   position: absolute;
   z-index: 2;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   color: white;
+/* font-family: 'Chivo', sans-serif; */
   height: 5rem;
   width: 100vw;
+  > h1 {
+    
+    margin: 0 2rem;
+}
+> h1 > a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+   
+    a:visited {
+        color: #372441;
+    }
+
+    a:hover {
+  color: #e2e606;
+}
   /* border: 1px solid white; */
 `;
 

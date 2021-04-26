@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 // import image from "../shooting_star_mountains.jpg";
-import image from "../mountain_horizon.jpg";
+// import image from "../mountain_horizon.jpg";
+import image from "../assets/purple-mountain-1280.jpg";
+
 
 
 function ParallaxOne() {
     return (
-        <ParallaxContainer className='parallax' style={{}}>
+        <ParallaxContainer className='parallax'>
           <SlideTitle>
- <p> Photos courtesy of  <a href="http://www.unsplash.com"> Unsplash</a></p>
+ <p> Photos courtesy of <a href="http://www.unsplash.com" target="_blank" rel="noreferrer noopener"> Unsplash</a></p>
           </SlideTitle>
         </ParallaxContainer>
     )
@@ -21,7 +23,7 @@ display: flex;
 width: 100vw;
 align-items: center;
 background-image: url(${image});
-min-height: 500px;
+min-height: 50em;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -31,7 +33,7 @@ color: white;
 
 const SlideTitle = styled.div`
 display: flex;
-font-size: 1.5rem;
+font-size: 2.5em;
 font-family: 'Chivo', sans-serif;
 text-transform: none;
 font-weight: 700;
@@ -40,6 +42,7 @@ align-items: center;
 width: 100%;
 height: 10rem;
 > p > a {
+  color: #e2e606;
   text-decoration: none;
 }
 a:hover {

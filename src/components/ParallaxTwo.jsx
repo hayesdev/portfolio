@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from "../working_together.jpg";
+import image from "../assets/working_together.jpg";
+import {FaAngleUp} from 'react-icons/fa'
 
 
 const ParallaxTwo = () => {
@@ -24,6 +25,7 @@ const ParallaxTwo = () => {
                     <h2>gthelight@gmail.com</h2>
                     </ContactInfo>
                 </ContactContainer>
+                {/* <UpArrow><FaAngleUp/></UpArrow> */}
         </ParallaxContainer>
     )
 }
@@ -35,7 +37,7 @@ display: flex;
 width: 100vw;
 align-items: flex-start;
 background-image: url(${image});
-min-height: 575px;
+min-height: 50em;
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -82,4 +84,11 @@ margin-top: 2em;
 > h2 {
     margin: .5em;
 }
+`;
+
+const UpArrow = styled.div`
+width: 100%;
+height: 1.5em;
+justify-content:center;
+color: #e2e606;
 `;

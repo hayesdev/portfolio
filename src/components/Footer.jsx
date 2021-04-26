@@ -27,7 +27,7 @@ export default Footer
 const FooterContainer = styled.div`
 display: flex;
 width: 100vw;
-height: 10em;
+height: 15em;
 background: #e2e606;
 color:#372441;
 `;
@@ -42,9 +42,10 @@ const Social = styled.div`
     display: flex;
     width: 50%;
     height: 75%;
-    font-size: .75em;
+    font-size: 1em;
     font-weight: 200;
-    margin-left: 1em;
+    margin-top: 1em;
+    margin-left: 2em;
     > h1 {
         margin-right: 1.5rem;
     }
@@ -63,7 +64,7 @@ const Social = styled.div`
 
 const Copyright = styled.div`
 align-items: flex-end;
-margin-left: 1em;
+margin-left: 1.75em;
 margin-top: 1em;
 width: 50%;
 height: 25%;

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
-import image from "../shooting_star_mountains.jpg";
+import image from "../assets/purple-mountain-1280.jpg";
+// import image from "../shooting_star_mountains.jpg";
 import {titles}  from './data'
 
 
@@ -49,14 +50,14 @@ function Welcome() {
         })}
         </div>                           
                 </Title>
-                        <NavWrapper>
+                        {/* <NavWrapper>
                             <Nav>
                             <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1>
                             <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>about</Scroll></h1>
                             <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
                             <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1>
                             </Nav>  
-                        </NavWrapper>  
+                        </NavWrapper>   */}
                 </TitleWrapper>
         </WelcomeWrapper>
     )
@@ -69,7 +70,10 @@ const WelcomeWrapper = styled.div`
   background: url(${image});
   background-size: cover;
   width: 100vw;
-  min-height: 50em;
+  min-height: 55em;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
   z-index:2;
 `;
 
@@ -88,7 +92,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-size: 2rem;
+font-size: 2em;
 font-family: 'Chivo', sans-serif;
 font-weight: 900;
 text-transform: none;
@@ -98,6 +102,7 @@ height: 65%;
     margin: 0;
 }
 > div > article > h1 {
+    font-size: 1.8em;
     margin:0 ;
 }
 `;
