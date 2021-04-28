@@ -7,9 +7,9 @@ const Navbar = () => {
     return (
         <MainHeader>
           <h1><Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll></h1>
-          <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000}>About</Scroll></h1>
-          <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000}>projects</Scroll></h1>
-          <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>contact</Scroll></h1>
+          <h1><Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30} >About</Scroll></h1>
+          <h1><Scroll to='projects' smooth={true} isDynamic={true} duration={1000} offset={-30}>projects</Scroll></h1>
+          <h1><Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>contact</Scroll></h1>
       </MainHeader>
     )
 }
@@ -29,6 +29,9 @@ const MainHeader = styled.div`
   > h1 {
     font-size: 1em;
     margin: 0 1.75rem;
+    @media (max-width: 400px) {
+      margin: 0 1rem;
+    }
 }
 > h1 > a {
         cursor: pointer;
@@ -40,7 +43,7 @@ const MainHeader = styled.div`
     a:hover {
   color: #e2e606;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   justify-content: center;
 
 }

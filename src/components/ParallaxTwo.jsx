@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from "../assets/working_together.jpg";
+import image from "../assets/working_together-lighter.jpg";
 import { Link as Scroll } from "react-scroll";
 import {FaAngleUp} from 'react-icons/fa'
 
@@ -127,6 +127,19 @@ color: white;
 }
 > div {
     width: 1em;
+    animation: bounce 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0% {
+       transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
 }
 div:hover {
     cursor: pointer;

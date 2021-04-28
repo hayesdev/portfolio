@@ -60,7 +60,7 @@ const Social = styled.div`
     a:hover {
   color: #46467b;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     font-size: .5em;
 }
 `;
@@ -87,7 +87,7 @@ const FinePrint = styled.div`
     > p > a {
         text-decoration: none;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
     font-size: .5em;
 }
 

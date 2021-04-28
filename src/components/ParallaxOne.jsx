@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import image from "../assets/purple-mountain-1280.jpg";
+import image from "../assets/light-purple-mountain.jpg";
 
 
 
@@ -31,7 +31,7 @@ color: white;
 
 const SlideTitle = styled.div`
 display: flex;
-font-size: 2.5em;
+font-size: 2.75em;
 font-family: 'Chivo', sans-serif;
 text-transform: none;
 font-weight: 700;
@@ -46,7 +46,7 @@ height: 10rem;
 a:hover {
   color: #46467b;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   font-size: 1.5em;
 }
 /* border: 1px solid red; */

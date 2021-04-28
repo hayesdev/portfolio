@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
-import image from "../assets/purple-mountain-1280.jpg";
+import { Link as Scroll } from "react-scroll";
+import {FaAngleDown} from 'react-icons/fa'
+import image from "../assets/light-purple-mountain.jpg";
 import {titles}  from './data'
 
 
@@ -49,8 +51,14 @@ function Welcome() {
           );
         })}
         </div>                           
-                </Title>
+                </Title> 
+                <DownArrowWrapper>
+                    <div>
+                        <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
+                    </div>
+                </DownArrowWrapper>
                 </TitleWrapper>
+               
         </WelcomeWrapper>
     )
 }
@@ -59,6 +67,8 @@ export default Welcome
 
 const WelcomeWrapper = styled.div`
   display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
   background: url(${image});
   background-size: cover;
   width: 100vw;
@@ -78,7 +88,6 @@ const TitleWrapper = styled.div`
     min-height: 24em;
     color: white;
     @media (max-width: 767px) {
-    display: flex;
     justify-content: center;
 }   
 `;
@@ -101,8 +110,8 @@ height: 65%;
     font-size: 1.8em;
     margin:0 ;
     @media (max-width: 767px) {
-        font-size: 1.25em;
-}
+        font-size: 1.5em;
+    }
     @media (max-width: 374px) {
     font-size: 1em;
 }
@@ -111,12 +120,53 @@ height: 65%;
 @media (max-width: 767px) {
         font-size: 1.75em;
 }
-@media (max-width: 595px) {
+@media (max-width: 615px) {
     font-size: 1.5em;
+}
+@media (max-width: 530px) {
+    font-size: 1em;
 }
 @media (max-width: 416px) {
     font-size: .75em;
 }
 `;
 
-
+const DownArrowWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+width: 100%;
+height: 1em;
+font-size: 4.25em;
+color: white;
+> p {
+    font-size: 1rem;
+}
+> div {
+    width: 1em;
+    animation: bounce 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0% {
+       transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+}
+div:hover {
+    cursor: pointer;
+    color: #e2e606
+}
+@media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+border: 1px solid red;
+`;

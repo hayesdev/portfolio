@@ -38,8 +38,8 @@ const ProjectsContainer = styled.div`
 display: flex;
 width: 100vw;
 height: 50em;
-@media (max-width: 768px) {
-    height: 80em;
+@media (max-width: 1450px) {
+      height: auto;
 }
 `;
 
@@ -54,6 +54,7 @@ height: 100%;
 > p {
     text-transform: none;
 }
+
 @media (max-width: 768px) {
     width: 100%;
 }
@@ -85,21 +86,21 @@ font-size: 2.5em;
 font-weight: 800;
 line-height: 1em;
 /* overflow: hidden; */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     display: none;
 }
 `;
 
 const Work = styled.div`
 display: flex;
-justify-content: center;
-margin-top: 1em;
-width: 98vw;
+justify-content: space-evenly;
+margin-top: 2.5em;
+width: 100vw;
 height: 100%;
-@media (max-width: 768px) {
-    justify-content: flex-start;
+border: 1px solid red;
+@media (max-width: 1450px) {
     flex-wrap: wrap;
-
+    margin-top: 0;
 } 
 
 `;
@@ -110,13 +111,16 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-left: 1rem;
-width: auto;
-height: 100%;
+width: 45%;
 * p {
     margin-left: 0;
 }
+ /* @media (max-width: 1450px) {
+    flex: 345px;
+    height: auto;
+} */
 @media (max-width: 768px) {
-    height: 50%;
+    height: 100%;
 }
 border: 1px solid red;
 `;

@@ -21,7 +21,7 @@ function About() {
                 <Skills>
                 <p>html css less javascript</p>
                 <p>react react-router redux</p>
-                <p>next. js tailwind.css sass</p>
+                <p>next. js tailwind.css less</p>
                 <p>styled-components flexbox</p>
                 </Skills>
             </Sidebar>    
