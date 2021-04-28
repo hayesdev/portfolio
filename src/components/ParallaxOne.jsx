@@ -12,11 +12,11 @@ function ParallaxOne() {
           <SlideTitle>
  <p> Photos courtesy of <a href="http://www.unsplash.com" target="_blank" rel="noreferrer noopener"> Unsplash</a></p>
           </SlideTitle>
-          {/* <DownArrowWrapper>
+          <DownArrowWrapper>
                     <div>
-                        <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
+                        <Scroll to='projects' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
                     </div>
-                </DownArrowWrapper> */}
+                </DownArrowWrapper>
         </ParallaxContainer>
     )
 }
@@ -25,8 +25,9 @@ export default ParallaxOne;
 
 const ParallaxContainer = styled.div`
 display: flex;
+flex-direction: column;
 width: 100vw;
-align-items: center;
+justify-content: flex-end;
 background-image: url(${image});
 min-height: 50em;
 background-attachment: fixed;
@@ -34,6 +35,11 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 color: white;
+
+@media (max-width: 768px) {
+  justify-content: center;
+}
+
 `;
 
 const SlideTitle = styled.div`
@@ -44,8 +50,10 @@ text-transform: none;
 font-weight: 700;
 justify-content: center;
 align-items: center;
+margin-bottom: 1em;
 width: 100%;
 height: 10rem;
+
 > p > a {
   color: #e2e606;
   text-decoration: none;
@@ -53,7 +61,7 @@ height: 10rem;
 a:hover {
   color: #46467b;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   font-size: 1.5em;
 }
 /* border: 1px solid red; */
@@ -92,10 +100,9 @@ div:hover {
     cursor: pointer;
     color: #e2e606
 }
-@media (max-width: 900px) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1em;
+@media (max-width: 768px) {
+        font-size: 3em;
+        /* margin-top: 7em; */
     }
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `;

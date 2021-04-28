@@ -97,7 +97,7 @@ justify-content: space-evenly;
 margin-top: 2.5em;
 width: 100vw;
 height: 100%;
-border: 1px solid red;
+/* border: 1px solid red; */
 @media (max-width: 1450px) {
     flex-wrap: wrap;
     margin-top: 0;
@@ -122,5 +122,5 @@ width: 45%;
 @media (max-width: 768px) {
     height: 100%;
 }
-border: 1px solid red;
+/* border: 1px solid red; */
 `;
