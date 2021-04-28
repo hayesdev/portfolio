@@ -59,7 +59,7 @@ height: 10rem;
   text-decoration: none;
 }
 a:hover {
-  color: #46467b;
+  color: #3282d4;
 }
 @media (max-width: 768px) {
   font-size: 1.5em;
