@@ -145,10 +145,8 @@ div:hover {
     cursor: pointer;
     color: #e2e606
 }
-@media (max-width: 900px) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1em;
+@media (max-width: 768px) {
+        font-size: 3em;
     }
 
 `;

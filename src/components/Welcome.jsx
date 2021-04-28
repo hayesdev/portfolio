@@ -6,12 +6,10 @@ import image from "../assets/light-purple-mountain.jpg";
 import {titles}  from './data'
 
 
-function Welcome() {
-    
+function Welcome() {    
     const [index, setIndex] = useState(0);
     const names = titles;
 
-   
       useEffect(() => {
         const lastIndex = names.length - 1;
             if (index < 0) {
@@ -42,23 +40,22 @@ function Welcome() {
                                     if (titleIndex === index - 1 ||
                                         (index === 0 && titleIndex === names.length - 1)) 
                                     {
-                                    position = "lastSlide";
-                                }
+                                        position = "lastSlide";
+                                    }
                                     return (
                                         <article key={titleIndex} className={position}>
                                             <h1 style={{color: '#e2e606'}}>{title}</h1>
                                         </article>
-          );
-        })}
-        </div>                           
-                </Title> 
-                <DownArrowWrapper>
+                                     );
+                                 })}
+                            </div>                           
+                        </Title> 
+                        <DownArrowWrapper>
                     <div>
                         <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
                     </div>
                 </DownArrowWrapper>
-                </TitleWrapper>
-               
+                </TitleWrapper>   
         </WelcomeWrapper>
     )
 }
@@ -67,8 +64,6 @@ export default Welcome
 
 const WelcomeWrapper = styled.div`
   display: flex;
-  /* flex-direction: column;
-  justify-content: center; */
   background: url(${image});
   background-size: cover;
   width: 100vw;
@@ -77,19 +72,17 @@ const WelcomeWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   z-index:2;
-
+  
 `;
 
 const TitleWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: space-between;
     width: 100%;
     min-height: 24em;
-    color: white;
-    @media (max-width: 767px) {
-    justify-content: center;
-}   
+    color: white; 
 `;
 
 const Title = styled.div`
@@ -129,6 +122,7 @@ height: 65%;
 @media (max-width: 416px) {
     font-size: .75em;
 }
+/* border: 1px solid red; */
 `;
 
 const DownArrowWrapper = styled.div`
@@ -136,6 +130,7 @@ display: flex;
 flex-direction: column;
 justify-content:flex-start;
 align-items: center;
+margin-top: 3.5em;
 width: 100%;
 height: 1em;
 font-size: 4.25em;
@@ -163,10 +158,10 @@ div:hover {
     cursor: pointer;
     color: #e2e606
 }
-@media (max-width: 900px) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1em;
+
+@media (max-width: 480px) {
+        font-size: 3em;
+        margin-top: 7em;
     }
-border: 1px solid red;
+    /* border: 1px solid red; */
 `;

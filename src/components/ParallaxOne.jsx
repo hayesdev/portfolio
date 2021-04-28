@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as Scroll } from "react-scroll";
+import {FaAngleDown} from 'react-icons/fa'
 import image from "../assets/light-purple-mountain.jpg";
 
 
@@ -10,6 +12,11 @@ function ParallaxOne() {
           <SlideTitle>
  <p> Photos courtesy of <a href="http://www.unsplash.com" target="_blank" rel="noreferrer noopener"> Unsplash</a></p>
           </SlideTitle>
+          {/* <DownArrowWrapper>
+                    <div>
+                        <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
+                    </div>
+                </DownArrowWrapper> */}
         </ParallaxContainer>
     )
 }
@@ -50,4 +57,45 @@ a:hover {
   font-size: 1.5em;
 }
 /* border: 1px solid red; */
+`;
+
+const DownArrowWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content:flex-start;
+align-items: center;
+margin-top: 3.5em;
+width: 100%;
+height: 1em;
+font-size: 4.25em;
+color: white;
+> p {
+    font-size: 1rem;
+}
+> div {
+    width: 1em;
+    animation: bounce 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0% {
+       transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+}
+div:hover {
+    cursor: pointer;
+    color: #e2e606
+}
+@media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+    border: 1px solid red;
 `;
