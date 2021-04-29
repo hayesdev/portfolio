@@ -72,7 +72,6 @@ const WelcomeWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   z-index:2;
-  
 `;
 
 const TitleWrapper = styled.div`
@@ -86,82 +85,93 @@ const TitleWrapper = styled.div`
 `;
 
 const Title = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-size: 2em;
-font-family: 'Chivo', sans-serif;
-font-weight: 900;
-text-transform: none;
-width: 66.6%;
-height: 65%;
-> h1 {
-    margin: 0;
-}
-> div > article > h1 {
-    font-size: 1.8em;
-    margin:0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    width: 66.6%;
+    height: 65%;
+
+    > h1 {
+        margin: 0;
+    }
+
+    > div > article > h1 {
+        font-size: 1.8em;
+        margin:0 ;
+
+        @media (max-width: 767px) {
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 374px) {
+            font-size: 1em;
+        }
+    }
+
     @media (max-width: 767px) {
+        font-size: 1.75em;
+    }
+
+    @media (max-width: 615px) {
         font-size: 1.5em;
     }
-    @media (max-width: 374px) {
-    font-size: 1em;
-}
 
-}
-@media (max-width: 767px) {
-        font-size: 1.75em;
-}
-@media (max-width: 615px) {
-    font-size: 1.5em;
-}
-@media (max-width: 530px) {
-    font-size: 1em;
-}
-@media (max-width: 416px) {
-    font-size: .75em;
-}
+    @media (max-width: 530px) {
+        font-size: 1em;
+    }
+
+    @media (max-width: 416px) {
+        font-size: .75em;
+    }
 /* border: 1px solid red; */
 `;
 
 const DownArrowWrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content:flex-start;
-align-items: center;
-margin-top: 3.5em;
-width: 100%;
-height: 1em;
-font-size: 4.25em;
-color: white;
-> p {
-    font-size: 1rem;
-}
-> div {
-    width: 1em;
-    animation: bounce 2.5s;
-    animation-iteration-count: infinite;
-}
-@keyframes bounce {
-    0% {
-       transform: translateY(10%);
-    }
-    50% {
-        transform: translateY(-3%);
-    }
-    100% {
-        transform: translateY(10%);
-    }
-}
-div:hover {
-    cursor: pointer;
-    color: #e2e606
-}
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 3.5em;
+    width: 100%;
+    height: 1em;
+    font-size: 4.25em;
+    color: white;
 
-@media (max-width: 480px) {
+    > p {
+        font-size: 1rem;
+    }
+
+    > div {
+        width: 1em;
+        animation: bounce 2.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+        transform: translateY(10%);
+        }
+        50% {
+            transform: translateY(-3%);
+        }
+        100% {
+            transform: translateY(10%);
+        }
+    }
+
+    div:hover {
+        cursor: pointer;
+        color: #e2e606
+    }
+
+    @media (max-width: 480px) {
         font-size: 3em;
-        margin-top: 7em;
+        margin-top: 4em;
     }
     /* border: 1px solid red; */
 `;
