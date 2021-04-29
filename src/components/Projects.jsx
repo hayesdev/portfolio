@@ -9,22 +9,26 @@ function Projects() {
     return (
        <ProjectsContainer id='projects'>
            <ProjectSection>
+               <TitleWrapper>
                <Title>Projects</Title>
                 <h1>my latest work</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident nobis ullam magni necessitatibus numquam a esse reprehenderit libero ipsum.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed!</p>
-                 
-            
+           </TitleWrapper>
            <Sidebar>
                <div>get a quote</div>
                <div>now</div>
            </Sidebar> 
            </ProjectSection>
-           <Project>  {data.map((project, index)=> {
-                        const {title, desc, link, image} = project;
-                        return <ProjectCard key={index} title={title} desc={desc} link={link} image={image}/>
-                       
-                    })} </Project> 
+           <Project>  
+               {data.map((project, index)=> {
+                    const {title, desc, link, image} = project;
+                    return (
+                    <ProjectCard key={index} title={title} desc={desc} link={link} image={image}/>
+                        )
+                    })
+                } 
+            </Project> 
        </ProjectsContainer>
     )
 }
@@ -35,17 +39,31 @@ const ProjectsContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 50em;
+    height: auto;
 
-    @media (max-width: 1450px) {
-      height: auto;
+    @media (max-width: 1350) {
+        flex-wrap: wrap;
     }
 `;
 
 const ProjectSection = styled.div`
     display: flex;
-    width: 66.66%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    } 
+`;
+const TitleWrapper = styled.section`
+    display: flex;
+    flex-direction: column;
+    width: 66.6%;
+    border: 1px solid red;
+
+    > h1 {
+        font-size: 2em;
+    }
 
     > h1, p {
         margin: .5rem .75rem;
@@ -56,7 +74,7 @@ const ProjectSection = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 100%;
+        width: 100%;;
     }
 `;
 
@@ -87,16 +105,19 @@ const Sidebar = styled.div`
     line-height: 1em;
 
     @media (max-width: 768px) {
-        display: none;
-    }
+        width: 100%;;
+    } 
 `;
 
 const Project = styled.body`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: flex-end;
+    min-height: 60%;
+
     > p {
         margin-left: 0;
     }
+    border: 1px solid red;
 `;

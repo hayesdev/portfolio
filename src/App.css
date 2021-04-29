@@ -74,19 +74,20 @@ article {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 450px;
+  height: 250px;
   margin: 20px;
   border-radius: 20px;
-  background: linear-gradient(-135deg, #3282d4, #614add, #5a3caa);
+  background: linear-gradient(135deg, #3282d4, #614add, #53195f);
 }
 
 .card img {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   left: 50%;
+  height: 200px;
+  border-radius: 5px;
   transform: translateX(-50%);
-  height: 400px;
   transition: 0.5s;
 }
 
