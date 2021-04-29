@@ -6,7 +6,8 @@ import yulu from "../assets/yulu_screenshot.PNG";
 export const data = [
   {
     title: "Yulu",
-    desc: "Hulu clone made with Next.js, Tailwind.css, and Just-In-Time (JIT).",
+    desc:
+      "Hulu UI clone made with Next.js, Tailwind.css, and Just-In-Time (JIT).",
     link: "https://yulu.vercel.app/",
     image: yulu,
   },

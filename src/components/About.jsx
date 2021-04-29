@@ -34,6 +34,7 @@ const AboutContainer = styled.div`
     display: flex;
     width: 100vw;
     height: 30em;
+    background: #f1f1fa;
     
     @media (max-width: 885px) {
         display: flex;

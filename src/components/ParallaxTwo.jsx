@@ -54,6 +54,7 @@ const ParallaxContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+
 `;
 
 const RowWrapper = styled.div`
@@ -92,7 +93,7 @@ const SlideTitle = styled.div`
 const ContactContainer = styled.div`
     display: flex;
     margin-top: 5em;
-    margin-right: 5em;
+    margin-right: 3em;
     width: 30%;
     height: 28rem;
     background:#53195f;
@@ -105,12 +106,12 @@ const ContactContainer = styled.div`
 `;
 
 const ContactInfo = styled.div`
-    display: flex;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em;
 
     > p {
         margin: .5em;

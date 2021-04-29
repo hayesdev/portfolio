@@ -40,6 +40,7 @@ const ProjectsContainer = styled.div`
     flex-direction: column;
     width: 100vw;
     height: auto;
+    background: #f1f1fa;
 
     @media (max-width: 1350) {
         flex-wrap: wrap;

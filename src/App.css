@@ -131,6 +131,11 @@ article {
   text-decoration: none;
 }
 
+.content a:hover {
+  color: #fff;
+  background: #53195f;
+}
+
 @media (max-width: 991px) {
   .card {
     position: relative;
