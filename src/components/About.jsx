@@ -126,9 +126,14 @@ const Skills = styled.div`
     font-family: 'PT Sans', sans-serif;
     margin-top: 1.5em;
     width: 100%;
-    height: 40%;
+    height: 30%;
 
     > p {
-        line-height: .25em;
+        line-height: 2em;
     }
+    
+    @media (max-width: 885px) {
+        height: 40%;
+    }
+
 `;

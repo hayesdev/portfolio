@@ -17,7 +17,7 @@ function Projects() {
            </TitleWrapper>
            <Sidebar>
                <div>get a quote</div>
-               <div>now</div>
+               <div> now</div>
            </Sidebar> 
            </ProjectSection>
            <Project>  
@@ -51,7 +51,7 @@ const ProjectSection = styled.div`
     width: 100%;
     height: 30%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 885px) {
         flex-direction: column;
     } 
 `;
@@ -59,7 +59,7 @@ const TitleWrapper = styled.section`
     display: flex;
     flex-direction: column;
     width: 66.6%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     > h1 {
         font-size: 2em;
@@ -73,7 +73,7 @@ const TitleWrapper = styled.section`
         text-transform: none;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 885px) {
         width: 100%;;
     }
 `;
@@ -104,7 +104,8 @@ const Sidebar = styled.div`
     font-weight: 800;
     line-height: 1em;
 
-    @media (max-width: 768px) {
+    @media (max-width: 885px) {
+        flex-direction: row;
         width: 100%;;
     } 
 `;
@@ -119,5 +120,5 @@ const Project = styled.body`
     > p {
         margin-left: 0;
     }
-    border: 1px solid red;
+    /* border: 1px solid red; */
 `;

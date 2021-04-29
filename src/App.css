@@ -134,7 +134,7 @@ article {
 @media (max-width: 991px) {
   .card {
     position: relative;
-    align-items: flex-start;
+    align-items: center;
     width: auto;
     transition: 0.5s;
     max-width: 600px;
@@ -145,14 +145,17 @@ article {
   }
 
   .card:hover img {
-    left: 50%;
-    height: 500px;
+    left: 25%;
+    width: auto;
+    height: 400px;
+    transform: translateY(-30%);
   }
 
   .card .content {
     width: 100%;
     left: 0;
     padding: 40px;
+    transform: translateY(100%);
   }
 }
 
