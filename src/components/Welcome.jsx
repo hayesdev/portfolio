@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
-import image from "../assets/light-purple-mountain.jpg";
+import image from "../assets/port-touched-up.jpg";
 import {titles}  from './data'
 
 
@@ -27,35 +27,35 @@ function Welcome() {
 
     return (
         <WelcomeWrapper id='welcome'>
-                <TitleWrapper>
-                        <Title>
-                            <h1>Gregory Hayes</h1>
-                            <div className="section-center">
-                                {names.map((name, titleIndex) => {
-                                    const { title} = name;
-                                    let position = "nextSlide";
-                                    if (titleIndex === index) {
-                                        position = "activeSlide";
-                                    }
-                                    if (titleIndex === index - 1 ||
-                                        (index === 0 && titleIndex === names.length - 1)) 
-                                    {
-                                        position = "lastSlide";
-                                    }
-                                    return (
-                                        <article key={titleIndex} className={position}>
-                                            <h1 style={{color: '#e2e606'}}>{title}</h1>
-                                        </article>
-                                     );
-                                 })}
-                            </div>                           
-                        </Title> 
-                        <DownArrowWrapper>
+            <TitleWrapper>
+                <Title>
+                    <h1>Gregory Hayes</h1>
+                    <div className="section-center">
+                        {names.map((name, titleIndex) => {
+                            const { title} = name;
+                            let position = "nextSlide";
+                            if (titleIndex === index) {
+                                position = "activeSlide";
+                            }
+                            if (titleIndex === index - 1 ||
+                                (index === 0 && titleIndex === names.length - 1)) 
+                            {
+                                position = "lastSlide";
+                            }
+                            return (
+                                <article key={titleIndex} className={position}>
+                                    <h1 style={{color: '#e2e606'}}>{title}</h1>
+                                </article>
+                                );
+                            })}
+                    </div>                           
+                </Title> 
+                <DownArrowWrapper>
                     <div>
                         <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
                     </div>
                 </DownArrowWrapper>
-                </TitleWrapper>   
+            </TitleWrapper>   
         </WelcomeWrapper>
     )
 }

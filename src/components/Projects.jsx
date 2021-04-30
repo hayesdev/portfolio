@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ProjectCard from './ProjectCard'
+import { Link as Scroll } from "react-scroll";
 import {data} from './data'
 
 
@@ -16,8 +17,9 @@ function Projects() {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed!</p>
            </TitleWrapper>
            <Sidebar>
-               <div>get a quote</div>
-               <div> now</div>
+           <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>
+              get a quote </Scroll>
+               {/* <div> now</div> */}
            </Sidebar> 
            </ProjectSection>
            <Project>  
@@ -105,13 +107,18 @@ const Sidebar = styled.div`
     font-weight: 800;
     line-height: 1em;
 
+    a:hover {
+      cursor: pointer;
+      color: #e2e606;
+    }
+
     @media (max-width: 885px) {
         flex-direction: row;
         width: 100%;;
     } 
 `;
 
-const Project = styled.body`
+const Project = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

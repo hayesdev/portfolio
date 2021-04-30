@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
-import image from "../assets/light-purple-mountain.jpg";
+import image from "../assets/port-touched-up.jpg";
 
 
 
 function ParallaxOne() {
     return (
-        <ParallaxContainer className='parallax'>
+        <ParallaxContainer className='parallax'> 
+       
           <SlideTitle>
             <p> Photos courtesy of <a href="http://www.unsplash.com" target="_blank" rel="noreferrer noopener"> Unsplash</a></p>
           </SlideTitle>
@@ -48,7 +49,7 @@ const SlideTitle = styled.div`
   text-transform: none;
   font-weight: 700;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1em;
   width: 100%;
   height: 10rem;
@@ -59,7 +60,7 @@ const SlideTitle = styled.div`
   }
 
   a:hover {
-    color: #3282d4;
+    color: #53195f;
   }
 
   @media (max-width: 768px) {
@@ -81,7 +82,7 @@ const DownArrowWrapper = styled.div`
 
   > p {
     font-size: 1rem;
-}
+  }
 
   > div {
     width: 1em;

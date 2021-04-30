@@ -140,9 +140,9 @@ article {
   .card {
     position: relative;
     align-items: center;
-    width: auto;
+    width: 600px;
     transition: 0.5s;
-    max-width: 600px;
+    /* max-width: 600px; */
   }
 
   .card:hover {
@@ -152,7 +152,7 @@ article {
   .card:hover img {
     left: 25%;
     width: auto;
-    height: 400px;
+    height: 350px;
     transform: translateY(-30%);
   }
 

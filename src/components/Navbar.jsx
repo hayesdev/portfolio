@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
-// import {FaAngleDown} from 'react-icons/fa'
+import {FaQuestion} from 'react-icons/fa'
 
 const Navbar = () => {
     return (
-        <MainHeader>
+        <MainHeader> 
+           <div style={{marginTop: '.25em', marginLeft: '.75em', fontSize: '1em'}}>
+             <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaQuestion/></Scroll>
+             </div>
+            <Wrapper>
           <h1>
-            <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>Welcome</Scroll>
+            <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>welcome</Scroll>
           </h1>
           <h1>
-            <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30} >About</Scroll>
+            <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30} >about</Scroll>
           </h1>
           <h1>
             <Scroll to='projects' smooth={true} isDynamic={true} duration={1000} offset={-30}>projects</Scroll>
@@ -18,6 +22,7 @@ const Navbar = () => {
           <h1>
             <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>contact</Scroll>
           </h1>
+         </Wrapper>
       </MainHeader>
     )
 }
@@ -26,15 +31,34 @@ export default Navbar
 
 const MainHeader = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   color: white;
   position: fixed;
-  background: linear-gradient(-45deg, #3282d4, #614add,  #5a3caa);
+  background: #53195f;
+   /* linear-gradient(45deg, #3282d4, #614add,  #53195f); */
   height: 2rem;
   width: 100vw;
-  z-index: 3;
+  z-index: 2;
 
+ a:visited {
+      color: #372441;
+    }
+
+    a:hover {
+      color: #e2e606;
+    }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`;
+
+const Wrapper = styled.div`
+display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
   > h1 {
     font-size: 1em;
     margin: 0 1.75rem;
@@ -49,16 +73,5 @@ const MainHeader = styled.div`
       text-decoration: none;
     }
 
-    a:visited {
-      color: #372441;
-    }
-
-    a:hover {
-      color: #e2e606;
-    }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
+   
 `;
-

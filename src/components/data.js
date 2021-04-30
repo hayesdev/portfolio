@@ -1,7 +1,7 @@
 import sleak from "../assets/sleak_screenshot_crop.png";
 import salt from "../assets/saltinator_screenshot.PNG";
 import event from "../assets/event_planner_screenshot.PNG";
-import yulu from "../assets/yulu_screenshot.PNG";
+import yulu from "../assets/yulu_screenshot.jpg";
 
 export const data = [
   {

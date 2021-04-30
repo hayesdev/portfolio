@@ -116,6 +116,10 @@ const ContactInfo = styled.div`
     > p {
         margin: .5em;
     }
+
+    > h1 {
+        margin-bottom: .5em;
+    }
     
     > h2 {
         margin: .5em;
