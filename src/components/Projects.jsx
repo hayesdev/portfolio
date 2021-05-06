@@ -89,7 +89,7 @@ const Title = styled.div`
     justify-content: center;
     align-items: center;
     width: 4.5rem;
-    height: 2rem;
+    height: 40px;
     margin: 1em 0 1em 1em;
     font-weight: 600;
     color: white;

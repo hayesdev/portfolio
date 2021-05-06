@@ -110,11 +110,11 @@ const VideoContainer = styled.div`
 `;
 
 const Title = styled.div`
-    display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 80px;
+    width: 4.5rem;
+    height: 40px;
     margin: 1em 0 1em 1em;
     font-weight: 600;
     color: white;
