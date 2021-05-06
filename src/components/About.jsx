@@ -12,15 +12,17 @@ function About() {
                     </VideoContainer>
                     <Title>About</Title>
                     <h1>ready to rock?</h1>
-                    <p>Hello there! My name is Gregory Hayes and I'm a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and I enjoy creating front-ends with HTML, CSS, Javascript, and React. I currently freelance, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current websites or create new ones from scratch.
+                    <p>Hi! I'm Gregory Hayes, a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and I currently do freelance work, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current web applications or create new ones from scratch!
                     </p>
                     <p>  If you have something you'd like to collaborate on, please 
-                        <a><Scroll to='contact' 
+                        <Scroll
+                        className='scroll'
+                        to='contact' 
                         smooth={true} 
                         isDynamic={true} 
                         duration={1000} 
                         offset={-30}
-                        > click here</Scroll></a> to reach out so we can ROCK your next project!</p>
+                        > click here</Scroll> to reach out so we can ROCK your next project!</p>
                 </AboutSection>
                 <Sidebar>
                     <div>Visually stunning</div> 
@@ -69,7 +71,7 @@ const AboutSection = styled.div`
         font-size: 1.15em;
         text-transform: none;
 
-        a {
+        .scroll {
             cursor: pointer;
             color: #53195f;
             text-decoration: underline;
