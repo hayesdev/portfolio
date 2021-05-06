@@ -12,7 +12,7 @@ function About() {
                     </VideoContainer>
                     <Title>About</Title>
                     <h1>ready to rock?</h1>
-                    <p>Hi! I'm Gregory Hayes, a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and I currently do freelance work, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current web applications or create new ones from scratch!
+                    <p>Hi! I'm Gregory Hayes, a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and I currently do freelance work, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current web applications, or create new ones from scratch!
                     </p>
                     <p>  If you have something you'd like to collaborate on, please 
                         <Scroll

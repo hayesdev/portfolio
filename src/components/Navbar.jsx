@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <MainHeader> 
            <div style={{marginTop: '.25em', marginLeft: '.75em', fontSize: '1em'}}>
-             <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaQuestion/></Scroll>
+             {/* <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaQuestion/></Scroll> */}
              </div>
             <Wrapper>
           <h1>
