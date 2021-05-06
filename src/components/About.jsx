@@ -114,7 +114,7 @@ const Title = styled.div`
     justify-content: center;
     align-items: center;
     width: 4rem;
-    height: 2em;
+    height: 80px;
     margin: 1em 0 1em 1em;
     font-weight: 600;
     color: white;
