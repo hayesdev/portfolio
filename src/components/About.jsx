@@ -12,7 +12,7 @@ function About() {
                     </VideoContainer>
                     <Title>About</Title>
                     <h1>ready to rock?</h1>
-                    <p>Hi there! My name is Gregory Hayes and I'm a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and enjoy creating front-ends with HTML, CSS, Javascript, and React. I currently freelance, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current websites or create new ones from scratch.
+                    <p>Hello there! My name is Gregory Hayes and I'm a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and I enjoy creating front-ends with HTML, CSS, Javascript, and React. I currently freelance, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current websites or create new ones from scratch.
                     </p>
                     <p>  If you have something you'd like to collaborate on, please 
                         <a><Scroll to='contact' 
@@ -64,6 +64,8 @@ const AboutSection = styled.div`
     }
 
     > p {
+        font-family: 'Chivo', sans-serif;
+        font-weight: 200;
         font-size: 1.15em;
         text-transform: none;
 

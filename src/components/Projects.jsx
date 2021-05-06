@@ -13,8 +13,8 @@ function Projects() {
                <TitleWrapper>
                <Title>Projects</Title>
                 <h1>my latest work</h1>
-                <p>Take a look below to see some of my favorite projects. I also have experience building back-ends with Node.js, Express, and SQL to create full-stack applications. I'm passionate about learning, and love finding new ways to build web apps that don't just look great, but actually work!</p>
-                <p>Each project is always a work in progress, but these are my most optimized builds for your browsing enjoyment!</p>
+                <p>Take a look below to see some of my latest projects. I also have experience building back-ends with Node.js, Express, and SQL to create full-stack applications. I'm passionate about learning, and love finding new ways to build web apps that don't just look great, but actually work!</p>
+                <p>I believe that no project is ever truly <i>'done'</i>, but here are my most recent and optimized builds for your browsing enjoyment!</p>
            </TitleWrapper>
            <Sidebar>
            <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>
@@ -73,7 +73,9 @@ const TitleWrapper = styled.section`
     }
 
     > p {
-        font-size: 1.2em;
+        font-family: 'Chivo', sans-serif;
+        font-weight: 200;
+        font-size: 1.15em;
         text-transform: none;
     }
 
