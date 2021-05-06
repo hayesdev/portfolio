@@ -12,26 +12,25 @@ export const data = [
     image: yulu,
   },
   {
-    title: "Event Planner",
-    desc:
-      "responsive landing page using HTML, CSS, and LESS. First original design and still a favorite!",
-    link: "https://pensive-mirzakhani-6d8023.netlify.app/",
-    image: event,
-  },
-  {
     title: "Sleak",
     desc:
       "Slack clone with messaging using React, Redux Toolkit, react-router, firebase, and styled-components.",
-    link: "https://sleak-1acdd.web.app/https://sleak-1acdd.web.app/",
+    link: "https://sleak-1acdd.web.app",
     image: sleak,
   },
-
   {
     title: "Saltinator",
     desc:
       "Fullstack app using React, Redux, react-router, react-hook-forms, and Node.js with Express.",
     link: "https://saltinator.netlify.app/",
     image: salt,
+  },
+  {
+    title: "Event Planner",
+    desc:
+      "responsive landing page using HTML, CSS, and LESS. First original design and still a favorite!",
+    link: "https://pensive-mirzakhani-6d8023.netlify.app/",
+    image: event,
   },
 ];
 

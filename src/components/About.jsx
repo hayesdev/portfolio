@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as Scroll } from "react-scroll";
 import image from '../assets/working_together-2.jpg'
 import "../App.css";
 
@@ -10,9 +11,16 @@ function About() {
                         <img src={image} alt=''/>
                     </VideoContainer>
                     <Title>About</Title>
-                    <h1>solutions tailored for you</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsum assumenda quo incidunt expedita aliquid. Reiciendis esse ea enim? Expedita mollitia accusantium asperiores eligendi. Impedit!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ab?</p>
+                    <h1>ready to rock?</h1>
+                    <p>Hi there! My name is Gregory Hayes and I'm a Web Developer based out of Orlando, FL. I've been a developer for 3 years, and enjoy creating front-ends with HTML, CSS, Javascript, and React. I currently freelance, lending my talent for building user-friendly, eye-catching UIs to my clients to enhance their current websites or create new ones from scratch.
+                    </p>
+                    <p>  If you have something you'd like to collaborate on, please 
+                        <a><Scroll to='contact' 
+                        smooth={true} 
+                        isDynamic={true} 
+                        duration={1000} 
+                        offset={-30}
+                        > click here</Scroll></a> to reach out so we can ROCK your next project!</p>
                 </AboutSection>
                 <Sidebar>
                     <div>Visually stunning</div> 
@@ -56,7 +64,18 @@ const AboutSection = styled.div`
     }
 
     > p {
+        font-size: 1.15em;
         text-transform: none;
+
+        a {
+            cursor: pointer;
+            color: #53195f;
+            text-decoration: underline;
+
+            &:hover {
+                color: #46467b;
+            }
+        }
     }
 
     @media (max-width: 885px) {

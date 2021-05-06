@@ -9,7 +9,6 @@ import image from "../assets/port-touched-up.jpg";
 function ParallaxOne() {
     return (
         <ParallaxContainer className='parallax'> 
-       
           <SlideTitle>
             <p> Photos courtesy of <a href="http://www.unsplash.com" target="_blank" rel="noreferrer noopener"> Unsplash</a></p>
           </SlideTitle>
@@ -37,8 +36,8 @@ const ParallaxContainer = styled.div`
   background-size: cover;
   color: white;
 
-  @media (max-width: 768px) {
-    justify-content: center;
+  @media (max-width: 500px) {
+    justify-content: space-around;
   }
 `;
 
@@ -63,7 +62,7 @@ const SlideTitle = styled.div`
     color: #53195f;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     font-size: 1.5em;
   }
 /* border: 1px solid red; */

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
 import image from "../assets/port-touched-up.jpg";
+import mobileImage from "../assets/port-touched-up-mobile.png";
 import {titles}  from './data'
 
 
@@ -71,7 +72,15 @@ const WelcomeWrapper = styled.div`
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  top: 0; 
+    left: 0;
+    bottom: 0; 
+    right: 0;
   z-index:2;
+
+  /* @media (max-width: 480px) {
+    background: url(${mobileImage});
+  } */
 `;
 
 const TitleWrapper = styled.div`
@@ -169,7 +178,7 @@ const DownArrowWrapper = styled.div`
         color: #e2e606
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
         font-size: 3em;
         margin-top: 4em;
     }
