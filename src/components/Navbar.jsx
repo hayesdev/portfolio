@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
-import {FaQuestion} from 'react-icons/fa'
+// import {FaQuestion} from 'react-icons/fa'
 
 const Navbar = () => {
     return (
