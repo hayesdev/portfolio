@@ -1,9 +1,17 @@
-import sleak from "../assets/sleak_screenshot_crop.png";
+import sleak from "../assets/sleak_screenshot-2.png";
 import salt from "../assets/saltinator_screenshot.PNG";
-import event from "../assets/event_planner_screenshot.PNG";
-import yulu from "../assets/yulu_screenshot.jpg";
+import event from "../assets/event_planner_screenshot-2.png";
+import yulu from "../assets/yulu_screenshot-2.png";
+import pulse from "../assets/disney_screenshot-2.png";
 
 export const data = [
+  {
+    title: "Disney Pulse",
+    desc:
+      "Disney Plus clone using React, Redux, react-router, firebase, and styled-components.",
+    link: "https://disney-pulse.web.app/",
+    image: pulse,
+  },
   {
     title: "Sleak",
     desc:
