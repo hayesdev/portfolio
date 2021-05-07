@@ -5,18 +5,18 @@ import yulu from "../assets/yulu_screenshot.jpg";
 
 export const data = [
   {
-    title: "Yulu",
-    desc:
-      "Hulu UI clone made with Next.js, Tailwind.css, and Just-In-Time (JIT).",
-    link: "https://yulu.vercel.app/",
-    image: yulu,
-  },
-  {
     title: "Sleak",
     desc:
       "Slack clone with messaging using React, Redux Toolkit, react-router, firebase, and styled-components.",
     link: "https://sleak-1acdd.web.app",
     image: sleak,
+  },
+  {
+    title: "Yulu",
+    desc:
+      "Hulu UI clone made with Next.js, Tailwind.css, and Just-In-Time (JIT).",
+    link: "https://yulu.vercel.app/",
+    image: yulu,
   },
   {
     title: "Saltinator",

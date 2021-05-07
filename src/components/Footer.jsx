@@ -7,8 +7,8 @@ function Footer() {
         <SocialContainer>
             <Social>
                 <h1><a href="http://www.facebook.com" target='_blank' rel="noreferrer noopener">FACEBOOK</a></h1>
-                <h1><a href="http://www.twitter.com" target='_blank' rel="noreferrer noopener">TWITTER</a></h1> 
-                <h1><a href="http://www.instagram.com" target='_blank' rel="noreferrer noopener">INSTAGRAM</a></h1>
+                <h1><a href="https://github.com/hayesdev" target='_blank' rel="noreferrer noopener">GITHUB</a></h1> 
+                <h1><a href="https://www.linkedin.com/in/gregory-hayes-12258492/" target='_blank' rel="noreferrer noopener">LINKEDIN</a></h1>
                 {/* Github and LinkedIn */}
             </Social>
             <Copyright>© 2021 HayesDev</Copyright>
