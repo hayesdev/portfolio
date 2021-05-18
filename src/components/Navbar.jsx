@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
-import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
+// import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
 
 const Navbar = () => {
     return (
