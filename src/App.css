@@ -140,6 +140,7 @@ article {
 .content a:hover {
   color: #fff;
   background: #53195f;
+  transition: all 0.2s;
 }
 
 @media (max-width: 991px) {

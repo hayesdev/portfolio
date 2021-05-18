@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
-import image from "../assets/port-original.jpg";
+import image from "../assets/port-touched-up.jpg";
 
 
 
