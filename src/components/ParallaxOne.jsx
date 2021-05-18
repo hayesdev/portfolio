@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as Scroll } from "react-scroll";
 import {FaAngleDown} from 'react-icons/fa'
-import image from "../assets/port-touched-up.jpg";
+import image from "../assets/port-original.jpg";
 
 
 
@@ -14,7 +14,7 @@ function ParallaxOne() {
           </SlideTitle>
           <DownArrowWrapper>
             <div>
-              <Scroll to='projects' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
+              <Scroll to='projects' smooth={true} isDynamic={true} duration={1000}><FaAngleDown/></Scroll>
             </div>
                 </DownArrowWrapper>
         </ParallaxContainer>

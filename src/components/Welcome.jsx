@@ -53,7 +53,7 @@ function Welcome() {
                 </Title> 
                 <DownArrowWrapper>
                     <div>
-                        <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaAngleDown/></Scroll>
+                        <Scroll to='about' smooth={true} isDynamic={true} duration={1000}><FaAngleDown/></Scroll>
                     </div>
                 </DownArrowWrapper>
             </TitleWrapper>   

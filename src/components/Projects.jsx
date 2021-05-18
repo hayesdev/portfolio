@@ -17,9 +17,9 @@ function Projects() {
                 <p>I believe that no project is ever truly <i>'done'</i>, so here are my most recently optimized builds for your browsing enjoyment!</p>
            </TitleWrapper>
            <Sidebar>
-           <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>
-              get a quote </Scroll>
-               {/* <div> now</div> */}
+            <Scroll to='contact' smooth={true} isDynamic={true} duration={1000}>
+              get a quote 
+            </Scroll>
            </Sidebar> 
            </ProjectSection>
            <Project>  
