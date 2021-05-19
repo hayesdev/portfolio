@@ -9,7 +9,6 @@ const Sidebar = () => {
   return (
     <aside className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}>
       <div className="sidebar-header">
-        {/* <img src={logo} className="logo" alt="coding addict" /> */}
         <button className="close-btn" onClick={closeSidebar}>
           <FaTimes />
         </button>
@@ -19,11 +18,13 @@ const Sidebar = () => {
           const { id, url, text } = link;
           return (
             <li key={id}>
-              <Scroll 
+              <Scroll  
               to={url} 
               smooth={true} 
               isDynamic={true} 
-              duration={1000}>
+              duration={1000}
+              onClick={closeSidebar}
+              >
                 {text}
               </Scroll>
             </li>
@@ -35,7 +36,7 @@ const Sidebar = () => {
           const { id, url, icon } = link;
           return (
             <li key={id}>
-              <a href={url}>{icon}</a>
+              <a href={url} target='_blank' rel="noreferrer noopener">{icon}</a>
             </li>
           );
         })}

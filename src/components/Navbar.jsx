@@ -38,7 +38,7 @@ a:hover {
 }
 
   > .MuiSvgIcon-root {
-      font-size: 2.7em;
+      font-size: 2.9em;
       margin-right: 1em;
       margin-top: .5em;
 

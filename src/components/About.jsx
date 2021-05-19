@@ -22,7 +22,7 @@ function About() {
                         isDynamic={true} 
                         duration={1000} 
                         offset={-30}
-                        > click here</Scroll> to reach out so we can ROCK your next project!</p>
+                        > click here</Scroll> to reach out so we can <i>ROCK</i> your next project!</p>
                 </AboutSection>
                 <Sidebar>
                     <div>Visually stunning</div> 
