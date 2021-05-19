@@ -6,10 +6,13 @@ import ParallaxOne from "./components/ParallaxOne";
 import ParallaxTwo from "./components/ParallaxTwo";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { useGlobalContext } from "./components/context";
 
 import "./App.css";
 
 function App() {
+  const { isSidebarOpen } = useGlobalContext();
+
   return (
     <div>
       <Navbar />

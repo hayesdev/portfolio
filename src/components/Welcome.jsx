@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
-import {FaAngleDown} from 'react-icons/fa'
+import { FaAngleDown } from 'react-icons/fa'
 import image from "../assets/port-touched-up.jpg";
-import mobileImage from "../assets/port-touched-up-mobile.png";
-import {titles}  from './data'
+import {titles, links, social}  from './data'
 
 
 function Welcome() {    
@@ -78,9 +77,6 @@ const WelcomeWrapper = styled.div`
     right: 0;
   z-index:2;
 
-  /* @media (max-width: 480px) {
-    background: url(${mobileImage});
-  } */
 `;
 
 const TitleWrapper = styled.div`
@@ -175,12 +171,13 @@ const DownArrowWrapper = styled.div`
 
     div:hover {
         cursor: pointer;
-        color: #e2e606
+        color: #e2e606;
+        transition: .2s;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
         font-size: 3em;
-        margin-top: 4em;
+        margin-top: 6em;
     }
     /* border: 1px solid red; */
 `;

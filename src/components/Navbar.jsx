@@ -1,30 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link as Scroll } from "react-scroll";
-// import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
+
+import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
+import { AppContext, useGlobalContext } from "./context";
+import Sidebar from "../components/Sidebar";
 
 const Navbar = () => {
-    return (
+  const { openSidebar } = useGlobalContext();
+
+  return (
         <MainHeader>  
-          {/* <MenuOpenRoundedIcon /> */}
-           <div >
-             {/* <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}><FaQuestion/></Scroll> */}
-            
-             </div>
-            <Wrapper>
-          <h1>
-            <Scroll to='welcome' smooth={true} isDynamic={true} duration={1000}>welcome</Scroll>
-          </h1>
-          <h1>
-            <Scroll to='about' smooth={true} isDynamic={true} duration={1000} offset={-30} >about</Scroll>
-          </h1>
-          <h1>
-            <Scroll to='projects' smooth={true} isDynamic={true} duration={1000} offset={-30}>projects</Scroll>
-          </h1>
-          <h1>
-            <Scroll to='contact' smooth={true} isDynamic={true} duration={1000} offset={-30}>contact</Scroll>
-          </h1>
-         </Wrapper>
+          <MenuOpenRoundedIcon onClick={openSidebar} />
+          <Sidebar />
       </MainHeader>
     )
 }
@@ -37,25 +24,19 @@ const MainHeader = styled.div`
   align-items: center;
   color: white;
   position: fixed;
-  background: #53195f;
-   /* linear-gradient(45deg, #3282d4, #614add,  #53195f); */
   height: 2rem;
   width: 100vw;
   z-index: 2;
   font-family: "Cuprum", sans-serif;
 
-
  a:visited {
-      color: #372441;
-    }
+    color: #372441;
+  }
 
-    a:hover {
-      color: #e2e606;
-    }
+a:hover {
+  color: #e2e606;
+}
 
-  /* @media (max-width: 768px) {
-    justify-content: center;
-  } */
   > .MuiSvgIcon-root {
       font-size: 2.7em;
       margin-right: 1em;
@@ -63,6 +44,8 @@ const MainHeader = styled.div`
 
       &:hover {
         color: #e2e606;
+        cursor: pointer;
+        transition: .25s;
       }
   }
 `;
