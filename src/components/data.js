@@ -2,7 +2,7 @@ import React from "react";
 import sleak from "../assets/sleak_screenshot-2.png";
 import salt from "../assets/saltinator_screenshot.PNG";
 import event from "../assets/event_planner_screenshot-2.png";
-import yulu from "../assets/yulu_screenshot-2.png";
+// import yulu from "../assets/yulu_screenshot-2.png";
 import pulse from "../assets/disney_screenshot-2.png";
 import {
   FaBehance,

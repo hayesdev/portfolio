@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
 import { FaAngleDown } from 'react-icons/fa'
 import image from "../assets/lone-mountain.png";
-import {titles, links, social}  from './data'
+import { titles }  from './data'
 
 
 function Welcome() {    

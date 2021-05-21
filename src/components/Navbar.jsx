@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import MenuOpenRoundedIcon from '@material-ui/icons/MenuOpenRounded';
-import { AppContext, useGlobalContext } from "./context";
+import { useGlobalContext } from "./context";
 import Sidebar from "../components/Sidebar";
 
 const Navbar = () => {
@@ -48,30 +48,4 @@ a:hover {
         transition: .25s;
       }
   }
-`;
-
-const Wrapper = styled.div`
-display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  
-  > h1 {
-    text-align: center;
-    font-size: 1em;
-    margin: 0 1.75rem;
-    
-    border-radius: 5px;
-    height: 1.2em;
-    width: 4em;
-
-
-    @media (max-width: 400px) {
-      margin: 0 1rem;
-    }
-  }
-
-  > h1 > a {
-      cursor: pointer;
-      text-decoration: none;
-    }
 `;
