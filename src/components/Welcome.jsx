@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import styled from "styled-components";
 import { Link as Scroll } from "react-scroll";
 import { FaAngleDown } from 'react-icons/fa'
-import image from "../assets/lone-mountain.png";
+import image from "../assets/mountain_sunset.png";
 import { titles }  from './data'
 
 
