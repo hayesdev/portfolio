@@ -46,9 +46,9 @@ export const data = [
 ];
 
 export const titles = [
-  { title: ".developer()" },
-  { title: ".designer()" },
-  { title: ".digitalSherpa()" },
+  { title: ".developer( )" },
+  { title: ".designer( )" },
+  { title: ".digitalSherpa( )" },
 ];
 
 export const links = [
